@@ -4,7 +4,7 @@ layout: default
 
 # 室岡雅樹 (Masaki Murooka)
 
-| [**GitHub**](https://github.com/mmurooka) | [**Google Scolar**](https://scholar.google.co.kr/citations?user=xcp8f3cAAAAJ&hl=en) | [**researchmap**](https://researchmap.jp/MasakiMurooka) |
+| [**GitHub**](https://github.com/mmurooka) | [**Google Scolar**](https://scholar.google.co.kr/citations?user=xcp8f3cAAAAJ&hl=en) | [**researchmap**](https://researchmap.jp/MasakiMurooka) | [**AIST-CNRS JRL**](https://unit.aist.go.jp/jrl-22022/en/members/member-murooka.html) |
 
 ## 職歴
 2022年10月-現在  
