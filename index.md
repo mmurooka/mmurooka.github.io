@@ -2,11 +2,11 @@
 layout: default
 ---
 
-# 室岡雅樹 (Masaki Murooka)
+# 室岡 雅樹 (Masaki Murooka)
 
 | [**GitHub**](https://github.com/mmurooka) | [**Google Scolar**](https://scholar.google.co.kr/citations?user=xcp8f3cAAAAJ&hl=en) | [**researchmap**](https://researchmap.jp/MasakiMurooka) | [**AIST-CNRS JRL**](https://unit.aist.go.jp/jrl-22022/en/members/member-murooka.html) |
 
-## 職歴
+## Career
 2022年10月-現在  
 産業技術総合研究所 情報・人間工学領域 AIST-CNRSロボット工学連携研究ラボ 主任研究員
 
@@ -19,7 +19,7 @@ layout: default
 2015年4月-2018年3月  
 日本学術振興会特別研究員 (DC1)
 
-## 学歴
+## Education
 2018年3月  
 東京大学大学院 情報理工学系研究科 知能機械情報学専攻 博士課程修了
 
@@ -29,8 +29,8 @@ layout: default
 2013年3月  
 東京大学 工学部 機械情報工学科 卒業
 
-## 筆頭著者論文
-### 学術論文誌
+## Publications (first author only)
+### Journal Papers
 Masaki Murooka, Mitsuharu Morisawa, Fumio Kanehiro  
 Centroidal Trajectory Generation and Stabilization Based on Preview Control for Humanoid Multi-Contact Motion  
 IEEE Robotics and Automation Letters, Vol. 7 No. 3 pp. 8225-8232, 2022. (Presented at IROS 2022)  
@@ -63,7 +63,7 @@ Advanced Robotics, Vol. 31 No. 6 pp. 322-340, 2017
 等身大ヒューマノイドにおける物体状態・操作力オンライン推定制御法に基づく大型重量物ピボット運搬行動の実現  
 日本ロボット学会誌, Vol. 32 No. 7 pp. 595-602, 2014  
 
-### 国際会議
+### International Conference Proceedings (Peer Reviewed)
 Masaki Murooka, Yohei Kakiuchi, Kei Okada, Masayuki Inaba  
 Whole-body posture evaluation and modification for crane-less servo-off operation of life-sized humanoid robot  
 In Proceedings of The 2018 IEEE-RAS International Conference on Humanoid Robots (Humanoids 2018), pp. 755-760, 2018  
@@ -96,7 +96,7 @@ Masaki Murooka, Shintaro Noda, Shunichi Nozawa, Yohei Kakiuchi, Kei Okada, Masay
 Manipulation strategy decision and execution based on strategy proving operation for carrying large and heavy objects  
 In Proceedings of The 2014 IEEE International Conference on Robotics and Automation (ICRA2014), pp. 3425-3432, 2014
 
-## 受賞
+## Awards
 Masaki Murooka, Yohei Kakiuchi, Kei Okada, Masayuki Inaba  
 Whole-body posture evaluation and modification for crane-less servo-off operation of life-sized humanoid robot  
 Best Interactive Paper Award, The 2018 IEEE-RAS International Conference on Humanoid Robots, 2018.11.8  
@@ -131,7 +131,7 @@ Masaki Murooka
 Manipulation strategy decision and execution based on strategy proving operation for carrying large and heavy objects  
 IEEE Robotics and Automation Society Japan Chapter Young Award, The 2014 IEEE International Conference on Robotics and Automation, 2014.6.2  
 
-## プロジェクト
+## Projects
 ### 研究代表
 人間からの教示により情報獲得可能な対話型ロボット動作計画システム  
 科学研究費助成事業 若手研究 2022年4月-2025年3月 (研究代表者)
@@ -152,24 +152,18 @@ IEEE Robotics and Automation Society Japan Chapter Young Award, The 2014 IEEE In
 複雑未知環境下における即時動作を可能とする多点接触運動システムの実現  
 科学研究費助成事業 基盤研究(B) 2021年4月-2024年3月 (研究分担者)
 
-## ソフトウェア
-Humanoid walking controller  
-[github.com/isri-aist/BaselineWalkingController](https://github.com/isri-aist/BaselineWalkingController)
+## Software
 
-Humanoid loco-manipulation controller  
-[github.com/isri-aist/LocomanipController](https://github.com/isri-aist/LocomanipController)
-
-Humanoid multi-contact motion controller  
-[github.com/isri-aist/MultiContactController](https://github.com/isri-aist/MultiContactController)
-
-Collection of centroidal control for legged robots  
-[github.com/isri-aist/CentroidalControlCollection](https://github.com/isri-aist/CentroidalControlCollection)
-
-Humanoid footstep planner  
-[github.com/isri-aist/BaselineFootstepPlanner](https://github.com/isri-aist/BaselineFootstepPlanner)
-
-Non-linear model predictive control  
-[github.com/isri-aist/NMPC](https://github.com/isri-aist/NMPC)
-
-Collection of quadratic programming solvers  
-[github.com/isri-aist/QpSolverCollection](https://github.com/isri-aist/QpSolverCollection)
+| Repository | CI |
+| --- | --- |
+| [isri-aist/QpSolverCollection](https://github.com/isri-aist/QpSolverCollection) | [![CI](https://github.com/isri-aist/QpSolverCollection/actions/workflows/ci.yaml/badge.svg)](https://github.com/isri-aist/QpSolverCollection/actions/workflows/ci.yaml) |
+| [isri-aist/NMPC](https://github.com/isri-aist/NMPC) | [![CI-standalone](https://github.com/isri-aist/NMPC/actions/workflows/ci-standalone.yaml/badge.svg)](https://github.com/isri-aist/NMPC/actions/workflows/ci-standalone.yaml) [![CI-catkin](https://github.com/isri-aist/NMPC/actions/workflows/ci-catkin.yaml/badge.svg)](https://github.com/isri-aist/NMPC/actions/workflows/ci-catkin.yaml) |
+| [isri-aist/DataDrivenMPC](https://github.com/isri-aist/DataDrivenMPC) | [![CI](https://github.com/isri-aist/DataDrivenMPC/actions/workflows/ci.yaml/badge.svg)](https://github.com/isri-aist/DataDrivenMPC/actions/workflows/ci.yaml) |
+| [isri-aist/CnoidRosUtils](https://github.com/isri-aist/CnoidRosUtils) | [![CI](https://github.com/isri-aist/CnoidRosUtils/actions/workflows/ci.yaml/badge.svg)](https://github.com/isri-aist/CnoidRosUtils/actions/workflows/ci.yaml) |
+| [isri-aist/ForceControlCollection](https://github.com/isri-aist/ForceControlCollection) | [![CI-standalone](https://github.com/isri-aist/ForceControlCollection/actions/workflows/ci-standalone.yaml/badge.svg)](https://github.com/isri-aist/ForceControlCollection/actions/workflows/ci-standalone.yaml) [![CI-catkin](https://github.com/isri-aist/ForceControlCollection/actions/workflows/ci-catkin.yaml/badge.svg)](https://github.com/isri-aist/ForceControlCollection/actions/workflows/ci-catkin.yaml) |
+| [isri-aist/TrajectoryCollection](https://github.com/isri-aist/TrajectoryCollection) | [![CI-standalone](https://github.com/isri-aist/TrajectoryCollection/actions/workflows/ci-standalone.yaml/badge.svg)](https://github.com/isri-aist/TrajectoryCollection/actions/workflows/ci-standalone.yaml) [![CI-catkin](https://github.com/isri-aist/TrajectoryCollection/actions/workflows/ci-catkin.yaml/badge.svg)](https://github.com/isri-aist/TrajectoryCollection/actions/workflows/ci-catkin.yaml) |
+| [isri-aist/CentroidalControlCollection](https://github.com/isri-aist/CentroidalControlCollection) | [![CI-standalone](https://github.com/isri-aist/CentroidalControlCollection/actions/workflows/ci-standalone.yaml/badge.svg)](https://github.com/isri-aist/CentroidalControlCollection/actions/workflows/ci-standalone.yaml) [![CI-catkin](https://github.com/isri-aist/CentroidalControlCollection/actions/workflows/ci-catkin.yaml/badge.svg)](https://github.com/isri-aist/CentroidalControlCollection/actions/workflows/ci-catkin.yaml) |
+| [isri-aist/BaselineFootstepPlanner](https://github.com/isri-aist/BaselineFootstepPlanner) | [![CI](https://github.com/isri-aist/BaselineFootstepPlanner/actions/workflows/ci-standalone.yaml/badge.svg)](https://github.com/isri-aist/BaselineFootstepPlanner/actions/workflows/ci-standalone.yaml) [![CI](https://github.com/isri-aist/BaselineFootstepPlanner/actions/workflows/ci-catkin.yaml/badge.svg)](https://github.com/isri-aist/BaselineFootstepPlanner/actions/workflows/ci-catkin.yaml) |
+| [isri-aist/BaselineWalkingController](https://github.com/isri-aist/BaselineWalkingController) | [![CI](https://github.com/isri-aist/BaselineWalkingController/actions/workflows/ci-standalone.yaml/badge.svg)](https://github.com/isri-aist/BaselineWalkingController/actions/workflows/ci-standalone.yaml) [![CI](https://github.com/isri-aist/BaselineWalkingController/actions/workflows/ci-catkin.yaml/badge.svg)](https://github.com/isri-aist/BaselineWalkingController/actions/workflows/ci-catkin.yaml) |
+| [isri-aist/LocomanipController](https://github.com/isri-aist/LocomanipController) | [![CI](https://github.com/isri-aist/LocomanipController/actions/workflows/ci.yaml/badge.svg)](https://github.com/isri-aist/LocomanipController/actions/workflows/ci.yaml) |
+| [isri-aist/MultiContactController](https://github.com/isri-aist/MultiContactController) | [![CI](https://github.com/isri-aist/MultiContactController/actions/workflows/ci.yaml/badge.svg)](https://github.com/isri-aist/MultiContactController/actions/workflows/ci.yaml) |
