@@ -7,6 +7,9 @@ layout: default
 | [**GitHub**](https://github.com/mmurooka) | [**Google Scolar**](https://scholar.google.co.kr/citations?user=xcp8f3cAAAAJ&hl=en) | [**researchmap**](https://researchmap.jp/MasakiMurooka) | [**AIST-CNRS JRL**](https://unit.aist.go.jp/jrl-22022/en/members/member-murooka.html) |
 
 ## Career
+2023年4月-現在
+経済産業省 製造産業局 産業機械課 ロボット政策室（産総研からの出向）
+
 2022年10月-現在  
 産業技術総合研究所 情報・人間工学領域 AIST-CNRSロボット工学連携研究ラボ 主任研究員
 
