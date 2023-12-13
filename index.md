@@ -15,39 +15,47 @@ title: Profile
 
 ![Whole-body manipulation by humanoid](./images/whole-body-manipulation.jpg)
 
-- Humanoid Loco-Manipulations Pattern Generation and Stabilization Control, RA-Letters 2021
-- Global planning of whole-body manipulation by humanoid robot based on transition graph of object motion and contact switching, Advanced Robotics 2017
-- Whole-body pushing manipulation with contact posture planning of large and heavy object for humanoid robot, ICRA2015
+- Humanoid Loco-Manipulations Pattern Generation and Stabilization Control, RA-Letters 2021. [video](https://www.youtube.com/watch?v=tiNfTSLoMkU&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
+- Humanoid Loco-manipulation Planning based on Graph Search and Reachability Maps, RA-Letters 2021. [video](https://www.youtube.com/watch?v=fNJDMrAFpaA&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
+- Global planning of whole-body manipulation by humanoid robot based on transition graph of object motion and contact switching, Advanced Robotics 2017. [video](https://www.youtube.com/watch?v=CvJjZkMIHU8&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
+- Whole-body pushing manipulation with contact posture planning of large and heavy object for humanoid robot, ICRA 2015. [video](https://www.youtube.com/watch?v=N2tTTRPpvf0&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
+- 等身大ヒューマノイドにおける物体状態・操作力オンライン推定制御法に基づく大型重量物ピボット運搬行動の実現, 日本ロボット学会誌 2014. [video](https://www.youtube.com/watch?v=5CXmmXsV9Ng&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
+- Manipulation strategy decision and execution based on strategy proving operation for carrying large and heavy objects, ICRA 2014. [video](https://www.youtube.com/watch?v=nmDnFCsyX04&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
 
 ## Multi-contact motion control of humanoid
 
 ![Multi-contact motion control of humanoid](./images/multicontact-motion.jpg)
 
-- Centroidal Trajectory Generation and Stabilization Based on Preview Control for Humanoid Multi-Contact Motion, RA-Letters 2022
+- Centroidal Trajectory Generation and Stabilization Based on Preview Control for Humanoid Multi-Contact Motion, RA-Letters 2022. [video](https://www.youtube.com/watch?v=JC9jA9nP4mw&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
 
 ## Optimization-based robot motion generation
 
 ![Optimization-based robot motion generation](./images/optimization-motion.jpg)
 
-- Optimization-based posture generation for whole-body contact motion by contact point search on the body surface, RA-Letters 2020
+- Optimization-based posture generation for whole-body contact motion by contact point search on the body surface, RA-Letters 2020. [video](https://www.youtube.com/watch?v=1HPEa3-jifY&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
+- Whole-body posture evaluation and modification for crane-less servo-off operation of life-sized humanoid robot, Humanoids 2018. [video](https://www.youtube.com/watch?v=UXFDxMJGg7Q&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
 - コンフィギュレーションの時変時不変性と隣接性を考慮した時系列逆運動学最適化計算によるロボット運動生成, 計測自動制御学会論文集 2019
 
 ## Manipulation planning based on physics reasoning
 
 ![Manipulation based on physics reasoning](./images/physics-reasoning.jpg)
 
-- Simultaneous planning and estimation based on physics reasoning in robot manipulation, ICRA 2018
-- Feasibility evaluation of object manipulation by a humanoid robot based on recursive estimation of the object’s physical properties, ICRA 2017
-- Planning and execution of groping behavior for contact sensor based manipulation in an unknown environment, ICRA 2016
+- Simultaneous planning and estimation based on physics reasoning in robot manipulation, ICRA 2018. [video](https://www.youtube.com/watch?v=lImh4kWf_Fk&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
+- Feasibility evaluation of object manipulation by a humanoid robot based on recursive estimation of the object's physical properties, ICRA 2017. [video](https://www.youtube.com/watch?v=lFr0B2FBgIw&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
+- Planning and execution of groping behavior for contact sensor based manipulation in an unknown environment, ICRA 2016.
 
 ## Recognition and learning for robot manipulation
 
 ![Recognition and learning for robot manipulation](./images/recognition-learning.jpg)
 
+- ロボットマニピュレーションにおける画像内物体の深層学習による運動予測, 人工知能学会全国大会 2017. [video](https://www.youtube.com/watch?v=-ijKfkpXLxg&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
+- ロボットマニピュレーションにおける幾何要素対応に基づく三次元物体姿勢認識, 日本ロボット学会学術講演会 2018. [video](https://www.youtube.com/watch?v=Shz6vbPbti0&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
+- Manipulation strategy learning for carrying large objects based on mapping from object physical property to object manipulation action in virtual environment, CASE 2014. [video](https://www.youtube.com/watch?v=VL3DOERdm-A&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
+
 
 # Publications
 
-[List of Papers and Awards](./publications.md)
+[List of papers and awards](./publications.md)
 
 # Software
 

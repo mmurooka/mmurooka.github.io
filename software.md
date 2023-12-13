@@ -12,6 +12,8 @@ All of the following controllers are implemented in a unified architecture and e
 
 Humanoid walking controller with various baseline methods.
 
+- [BaselineWalkingControllerに関する日本語ドキュメント](https://gist.github.com/mmurooka/32324ade4ce07d49ae4810c74b235f02)
+
 <video src="https://user-images.githubusercontent.com/6636600/201510077-5be6ab58-9671-413a-93c4-9b84caf9735e.mp4" controls="controls" style="max-width: 640px;">
 </video>
 <br/>
@@ -29,6 +31,26 @@ Humanoid loco-manipulation controller.
 Humanoid multi-contact motion controller.
 
 <video src="https://user-images.githubusercontent.com/6636600/220029546-ef3d5e66-c06d-417e-aac3-27832299f216.mp4" controls="controls" style="max-width: 640px;">
+</video>
+<br/>
+
+# Baseline planner
+
+## [BaselineFootstepPlanner](https://github.com/isri-aist/BaselineFootstepPlanner)
+
+Humanoid footstep planner based on baseline methods with graph search.
+
+<video src="https://user-images.githubusercontent.com/6636600/187672008-fb93fb0e-5ec0-4054-a31d-68ce6c884005.mp4" controls="controls" style="max-width: 640px;">
+</video>
+<br/>
+
+# General-purpose controller
+
+## [NMPC](https://github.com/isri-aist/NMPC)
+
+Non-linear model predictive control (NMPC) library.
+
+<video src="https://github.com/isri-aist/NMPC/assets/6636600/02f64c91-88aa-42d8-abfd-f8062d7406e9" controls="controls" style="max-width: 640px;">
 </video>
 <br/>
 
@@ -53,6 +75,10 @@ Plugin to simulate tactile sensors in MuJoCo.
 ## [CnoidRosUtils](https://github.com/isri-aist/CnoidRosUtils)
 
 ROS-based Choreonoid utilities.
+
+# Simulation challenge
+
+- [Humanoid Virtual Athletics Challenge 2021 (AIST-JRL-MM)](https://www.youtube.com/watch?v=shfvDk8zplg&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
 
 # Status of continuous integration (CI)
 
