@@ -38,7 +38,7 @@ title: Profile
 - Whole-body posture evaluation and modification for crane-less servo-off operation of life-sized humanoid robot, Humanoids 2018. [video](https://www.youtube.com/watch?v=UXFDxMJGg7Q&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
 - コンフィギュレーションの時変時不変性と隣接性を考慮した時系列逆運動学最適化計算によるロボット運動生成, 計測自動制御学会論文集 2019. [video](https://www.youtube.com/watch?v=S1qMf9hXmAg&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
 
-## Manipulation planning based on physics reasoning
+## Physics reasoning for robot manipulation
 
 ![Manipulation based on physics reasoning](./images/physics-reasoning.jpg)
 
