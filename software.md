@@ -60,7 +60,7 @@ Non-linear model predictive control (NMPC) library.
 
 ROS-based visualization library for robot arrays.
 
-<video src="https://github.com/isri-aist/RobotArrayVisualization/assets/6636600/4eae6e07-738d-490e-b254-1b02bcb04e8c" controls="controls" style="max-width: 640px;">
+<video src="https://github.com/isri-aist/RobotArrayVisualization/assets/6636600/c20738d6-dc17-4ee6-bec3-03ba152cd238" controls="controls" style="max-width: 640px;">
 </video>
 <br/>
 
