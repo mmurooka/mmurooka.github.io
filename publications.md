@@ -120,36 +120,36 @@ title: Publications
   日本機械学会ロボティクス・メカトロニクス講演会講演論文集 2013, 2P1-B02, 2013  
 
 ## Awards
-- Masaki Murooka, Yohei Kakiuchi, Kei Okada, Masayuki Inaba  
+- **Best Interactive Paper Award, The 2018 IEEE-RAS International Conference on Humanoid Robots, 2018.11.8**  
   Whole-body posture evaluation and modification for crane-less servo-off operation of life-sized humanoid robot  
-  Best Interactive Paper Award, The 2018 IEEE-RAS International Conference on Humanoid Robots, 2018.11.8  
+  Masaki Murooka, Yohei Kakiuchi, Kei Okada, Masayuki Inaba  
 
-- 室岡 雅樹  
+- **  東京大学大学院情報理工学系研究科 平成29年度研究科長賞, 2018.3.22**  
   博士論文「操作応答の知覚による物理的整合性推論に基づくヒューマノイドの試行獲得型マニピュレーション」  
-  東京大学大学院情報理工学系研究科 平成29年度研究科長賞, 2018.3.22  
+  室岡 雅樹  
 
-- 室岡 雅樹, 小椎尾 侑多, 野沢 峻一, 垣内 洋平, 岡田 慧, 稲葉 雅幸  
+- **日本ロボット学会第31回学会誌論文賞, 2017.9.13**  
   等身大ヒューマノイドにおける接触姿勢計画と歩行動作修正に基づく大型重量物全身押し操作行動の実現  
-  日本ロボット学会第31回学会誌論文賞, 2017.9.13  
+  室岡 雅樹, 小椎尾 侑多, 野沢 峻一, 垣内 洋平, 岡田 慧, 稲葉 雅幸  
 
-- 室岡 雅樹  
+- **2016年度計測自動制御学会学術奨励賞研究奨励賞, 第16回SICEシステムインテグレーション部門講演会, 2017.2.20**  
   力覚情報による環境モデリングと試行動作計画に基づいた未知環境手探り行動の実現法  
-  2016年度計測自動制御学会学術奨励賞研究奨励賞, 第16回SICEシステムインテグレーション部門講演会, 2017.2.20  
+  室岡 雅樹  
 
-- 室岡 雅樹  
+- **日本ロボット学会第31回研究奨励賞, 第33回日本ロボット学会学術講演会, 2016.9.8**  
   全身接触押し動作生成と運搬戦略事前評価に基づく等身大ヒューマノイドによる重量物運搬行動の実現法  
   物体姿勢・把持接触グラフに基づく双腕ロボットによる全身接触抱え上げ操作の動作計画法  
   手動修正可能な自律認識行動システムによる未知遠隔環境下での全身マニピュレーション実現法  
-  日本ロボット学会第31回研究奨励賞, 第33回日本ロボット学会学術講演会, 2016.9.8  
+  室岡 雅樹  
 
-- 室岡 雅樹  
+- **東京大学大学院情報理工学系研究科 平成26年度研究科長賞, 2015.3.24**  
   修士論文「等身大ヒューマノイドにおける全身接触重量物操作行動の計画・制御法に関する研究」  
-  東京大学大学院情報理工学系研究科 平成26年度研究科長賞, 2015.3.24  
+  室岡 雅樹  
 
-- Masaki Murooka, Shintaro Noda, Shunichi Nozawa, Yohei Kakiuchi, Kei Okada, Masayuki Inaba  
+- **Best Conference Paper Award, The 2014 IEEE International Conference on Robotics and Automation, 2014.6.4**  
   Manipulation strategy decision and execution based on strategy proving operation for carrying large and heavy objects  
-  Best Conference Paper Award, The 2014 IEEE International Conference on Robotics and Automation, 2014.6.4  
+  Masaki Murooka, Shintaro Noda, Shunichi Nozawa, Yohei Kakiuchi, Kei Okada, Masayuki Inaba  
 
-- Masaki Murooka  
+- **IEEE Robotics and Automation Society Japan Chapter Young Award, The 2014 IEEE International Conference on Robotics and Automation, 2014.6.2**  
   Manipulation strategy decision and execution based on strategy proving operation for carrying large and heavy objects  
-  IEEE Robotics and Automation Society Japan Chapter Young Award, The 2014 IEEE International Conference on Robotics and Automation, 2014.6.2  
+  Masaki Murooka  
