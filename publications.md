@@ -124,7 +124,7 @@ title: Publications
   Whole-body posture evaluation and modification for crane-less servo-off operation of life-sized humanoid robot  
   Masaki Murooka, Yohei Kakiuchi, Kei Okada, Masayuki Inaba  
 
-- **  東京大学大学院情報理工学系研究科 平成29年度研究科長賞, 2018.3.22**  
+- **東京大学大学院情報理工学系研究科 平成29年度研究科長賞, 2018.3.22**  
   博士論文「操作応答の知覚による物理的整合性推論に基づくヒューマノイドの試行獲得型マニピュレーション」  
   室岡 雅樹  
 
