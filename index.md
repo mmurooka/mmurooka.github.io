@@ -15,8 +15,8 @@ title: Profile
 
 ![Whole-body manipulation by humanoid](./images/whole-body-manipulation.jpg)
 
-- Humanoid Loco-Manipulations Pattern Generation and Stabilization Control, RA-Letters 2021. [video](https://www.youtube.com/watch?v=tiNfTSLoMkU&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
-- Humanoid Loco-manipulation Planning based on Graph Search and Reachability Maps, RA-Letters 2021. [video](https://www.youtube.com/watch?v=fNJDMrAFpaA&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
+- Humanoid loco-manipulations pattern generation and stabilization control, RA-Letters 2021. [video](https://www.youtube.com/watch?v=tiNfTSLoMkU&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
+- Humanoid loco-manipulation planning based on graph search and reachability maps, RA-Letters 2021. [video](https://www.youtube.com/watch?v=fNJDMrAFpaA&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
 - Global planning of whole-body manipulation by humanoid robot based on transition graph of object motion and contact switching, Advanced Robotics 2017. [video](https://www.youtube.com/watch?v=CvJjZkMIHU8&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
 - Whole-body holding manipulation by humanoid robot based on transition graph of object motion and contact, IROS 2015. [video](https://www.youtube.com/watch?v=_KJdUh_pIRE&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
 - Whole-body pushing manipulation with contact posture planning of large and heavy object for humanoid robot, ICRA 2015. [video](https://www.youtube.com/watch?v=N2tTTRPpvf0&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
@@ -28,7 +28,8 @@ title: Profile
 
 ![Multi-contact motion control of humanoid](./images/multicontact-motion.jpg)
 
-- Centroidal Trajectory Generation and Stabilization Based on Preview Control for Humanoid Multi-Contact Motion, RA-Letters 2022. [video](https://www.youtube.com/watch?v=JC9jA9nP4mw&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
+- Whole-body multi-contact motion control for humanoid robots based on distributed tactile sensors, RA-Letters 2024. [video](https://www.youtube.com/watch?v=I0OZYr-53uU)
+- Centroidal trajectory generation and stabilization based on preview control for humanoid multi-contact motion, RA-Letters 2022. [video](https://www.youtube.com/watch?v=JC9jA9nP4mw&list=PL_MvP6ejFrHu0oTEY-iSzhu6t8Nmu5l-s)
 
 ## Optimization-based robot motion generation
 

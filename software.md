@@ -30,7 +30,7 @@ Humanoid loco-manipulation controller.
 
 Humanoid multi-contact motion controller.
 
-<video src="https://user-images.githubusercontent.com/6636600/220029546-ef3d5e66-c06d-417e-aac3-27832299f216.mp4" controls="controls" style="max-width: 640px;">
+<video src="https://github.com/user-attachments/assets/a50d2b41-d93f-4e4c-8ca2-74fba00e194f" controls="controls" style="max-width: 640px;">
 </video>
 <br/>
 

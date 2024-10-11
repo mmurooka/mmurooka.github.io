@@ -6,15 +6,19 @@ title: Publications
 # Publications (first author only)
 
 ## Journal Papers
-- **Centroidal Trajectory Generation and Stabilization Based on Preview Control for Humanoid Multi-Contact Motion**  
+- **Whole-body multi-contact motion control for humanoid robots based on distributed tactile sensors**  
+  Masaki Murooka, Kensuke Fukumitsu, Marwan Hamze, Mitsuharu Morisawa, Hiroshi Kaminaga, Fumio Kanehiro, Eiichi Yoshida  
+  IEEE Robotics and Automation Letters, 2024.  
+
+- **Centroidal trajectory generation and stabilization based on preview control for humanoid multi-contact motion**  
   Masaki Murooka, Mitsuharu Morisawa, Fumio Kanehiro  
   IEEE Robotics and Automation Letters, Vol. 7 No. 3 pp. 8225-8232, 2022. (Presented at IROS 2022)  
 
-- **Humanoid Loco-Manipulations Pattern Generation and Stabilization Control**  
+- **Humanoid loco-manipulations pattern generation and stabilization control**  
   Masaki Murooka, Kevin Chappellet, Arnaud Tanguy, Mehdi Benallegue, Iori Kumagai, Mitsuharu Morisawa, Fumio Kanehiro, Abderrahmane Kheddar  
   IEEE Robotics and Automation Letters, Vol. 6 No. 3 pp. 5597-5604, 2021. (Presented at IROS 2021)  
 
-- **Humanoid Loco-manipulation Planning based on Graph Search and Reachability Maps**  
+- **Humanoid loco-manipulation planning based on graph search and reachability maps**  
   Masaki Murooka, Iori Kumagai, Mitsuharu Morisawa, Fumio Kanehiro, Abderrahmane Kheddar  
   IEEE Robotics and Automation Letters, Vol. 6 No. 2 pp. 1840-1847, 2021. (Presented at ICRA 2021)  
 
