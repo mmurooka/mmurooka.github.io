@@ -44,6 +44,16 @@ Humanoid footstep planner based on baseline methods with graph search.
 </video>
 <br/>
 
+# Baseline for robot learning
+
+## [RoboManipBaselines](https://github.com/isri-aist/RoboManipBaselines)
+
+Software that integrates various imitation learning methods and benchmark task environments to provide baselines for robot manipulation.
+
+<video src="https://github.com/user-attachments/assets/ba4a772f-0de5-47da-a4ec-bdcbf13d7d58" controls="controls" style="max-width: 640px;">
+</video>
+<br/>
+
 # General-purpose controller
 
 ## [NMPC](https://github.com/isri-aist/NMPC)
