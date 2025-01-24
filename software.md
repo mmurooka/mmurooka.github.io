@@ -34,6 +34,14 @@ Humanoid multi-contact motion controller.
 </video>
 <br/>
 
+## [HumanRetargetingController](https://github.com/isri-aist/HumanRetargetingController)
+
+Humanoid multi-contact motion controller.
+
+<video src="https://github.com/user-attachments/assets/827753ae-862e-464d-ab4b-4ea936c238c0" controls="controls" style="max-width: 640px;">
+</video>
+<br/>
+
 # Baseline planner
 
 ## [BaselineFootstepPlanner](https://github.com/isri-aist/BaselineFootstepPlanner)
