@@ -36,7 +36,7 @@ Humanoid multi-contact motion controller.
 
 ## [HumanRetargetingController](https://github.com/isri-aist/HumanRetargetingController)
 
-Humanoid multi-contact motion controller.
+Controller for retargeting the motion from human to humanoid robot.
 
 <video src="https://github.com/user-attachments/assets/827753ae-862e-464d-ab4b-4ea936c238c0" controls="controls" style="max-width: 640px;">
 </video>
