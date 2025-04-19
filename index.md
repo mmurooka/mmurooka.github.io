@@ -3,7 +3,7 @@ layout: default
 title: Profile
 ---
 
-| [**GitHub**](https://github.com/mmurooka) | [**Google Scolar**](https://scholar.google.com/citations?user=d3XKqo0AAAAJ&hl=ja&oi=ao) | [**LinkedIn**](www.linkedin.com/in/masaki-murooka-66416a361) | [**researchmap**](https://researchmap.jp/MasakiMurooka) |
+| [**GitHub**](https://github.com/mmurooka) | [**Google Scolar**](https://scholar.google.com/citations?user=d3XKqo0AAAAJ&hl=ja&oi=ao) | [**LinkedIn**](https://www.linkedin.com/in/masaki-murooka-66416a361) | [**researchmap**](https://researchmap.jp/MasakiMurooka) |
 
 産業技術総合研究所 主任研究員  
 博士 (情報理工学)  
