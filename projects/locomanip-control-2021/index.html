@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanoid Loco-manipulation Control</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+      /* このページ固有のスタイル（もしあれば） */
+      .project-overview {
+          display: flex;
+          align-items: flex-start;
+          gap: 30px;
+          margin-bottom: 30px;
+          flex-wrap: wrap; /* Responsive */
+      }
+      .project-overview img {
+          max-width: 400px;
+          height: auto;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+      }
+      .project-details {
+          flex-grow: 1;
+      }
+      .figure-gallery {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 20px;
+          margin-top: 30px;
+      }
+      .figure-gallery img {
+          width: 100%;
+          height: auto;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          cursor: zoom-in; /* Hint for zoom on click */
+      }
+      .figure-gallery figcaption {
+          text-align: center;
+          font-size: 0.9em;
+          color: #666;
+          margin-top: 5px;
+      }
+
+      .publication-links-project ul {
+          list-style: none; /* Remove bullet points */
+          padding: 0;
+          display: flex; /* Arrange buttons horizontally */
+          flex-wrap: wrap; /* Wrap buttons on small screens */
+          gap: 10px; /* Space between buttons */
+          justify-content: center; /* Center align buttons */
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+      .publication-links-project li {
+          margin: 0; /* Remove default li margin */
+      }
+      .publication-links-project .link-button {
+          display: inline-block; /* Allows setting width/height/margin like block element */
+          min-width: 100px; /* Minimum button width */
+          padding: 8px 15px;
+          background-color: #007bff; /* Background color */
+          color: white; /* Text color */
+          text-align: center; /* Center text */
+          text-decoration: none; /* Remove underline */
+          border-radius: 5px; /* Rounded corners */
+          transition: background-color 0.3s ease; /* Hover animation */
+          box-sizing: border-box; /* Include padding and border in width */
+      }
+      .publication-links-project .link-button:hover {
+          background-color: #0056b3; /* Hover background color */
+      }
+
+      /* Project page specific header/navigation adjustments */
+      header .external-links { /* Hide external links in project page header */
+          display: none;
+      }
+      header .lang-switcher a { /* Styling for "Go to Author's Page" link */
+          padding: 8px 12px;
+          border: 1px solid #fff;
+          border-radius: 5px;
+          font-size: 1em;
+      }
+      header .lang-switcher a:hover {
+          background: #007bff;
+          border-color: #007bff;
+      }
+      nav { /* Hide navigation bar */
+          display: none;
+      }
+
+      /* Header text styles */
+      .header-title {
+        color:white;
+        text-decoration:none;
+        margin-top: 20px;
+      }
+      .header-subtitle {
+        color:#ddd;
+        margin-top: 20px;
+      }
+      .header-authors {
+        font-size:1.3em;
+      }
+      .header-journal {
+        font-size:1.0em;
+      }
+
+      /* Main Video specific style */
+      .video-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+          height: 0;
+          overflow: hidden;
+          margin-bottom: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+      }
+
+      /* BibTeX code block style */
+      #citation pre {
+          background-color: #f4f4f4;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          padding: 15px;
+          overflow-x: auto; /* Enable horizontal scroll */
+          font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+          font-size: 0.9em;
+          line-height: 1.5;
+          color: #333;
+      }
+      #citation code {
+          display: block; /* Make code element a block */
+          white-space: pre-wrap; /* Wrap text automatically */
+          word-wrap: break-word; /* Break long words */
+      }
+
+      /* Methodology section image container styles */
+      .figure-container {
+          text-align: center; /* Center image */
+          margin-bottom: 20px;
+      }
+      .figure-container figcaption {
+          font-size: 0.9em;
+          color: #444;
+          margin-top: 5px;
+      }
+      .methodology-image {
+          max-width: 100%;
+          height: auto;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          display: block; /* Block element for centering */
+          margin: 0 auto; /* Center align */
+      }
+
+      /* Methodology section horizontal image styles */
+      .methodology-figures-row {
+          display: flex;
+          flex-wrap: wrap; /* Wrap on small screens */
+          justify-content: center; /* Center align */
+          gap: 20px; /* Space between images */
+          margin-top: 20px;
+          margin-bottom: 20px;
+          align-items: flex-end; /* Align figures to the bottom */
+      }
+      .methodology-figure-item {
+          flex: 1 1 calc(50% - 10px); /* Two columns (subtract half gap) */
+          max-width: calc(50% - 10px); /* Two columns (subtract half gap) */
+          box-sizing: border-box; /* Include padding and border in width */
+          text-align: center;
+          margin: 0; /* Reset default figure margin */
+      }
+      .methodology-figure-item img {
+          width: 100%;
+          height: auto;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+      }
+      .methodology-figure-item figcaption {
+          font-size: 0.9em;
+          color: #444;
+          margin-top: 5px;
+      }
+      .methodology-figure-item.figure-left1 {
+          flex: 0 0 calc(60% - 10px);
+          max-width: calc(60% - 10px);
+      }
+      .methodology-figure-item.figure-right1 {
+          flex: 0 0 calc(30% - 10px);
+          max-width: calc(30% - 10px);
+      }
+      .methodology-figure-item.figure-left2 {
+          flex: 0 0 calc(55% - 10px);
+          max-width: calc(55% - 10px);
+      }
+      .methodology-figure-item.figure-right2 {
+          flex: 0 0 calc(35% - 10px);
+          max-width: calc(35% - 10px);
+      }
+
+      /* Video gallery styles */
+      .video-gallery-row {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px; /* Space between videos */
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+      .video-gallery-row figcaption {
+          font-size: 0.9em;
+          color: #444;
+      }
+      .video-gallery-row-double-cols figcaption {
+          margin-top: -16px; /* Reduce space between video and caption */
+      }
+      .video-item {
+          flex: 1 1 calc(50% - 10px); /* Two columns */
+          max-width: calc(50% - 10px);
+          box-sizing: border-box;
+          text-align: center;
+      }
+      .video-item video {
+          width: 100%;
+          height: auto;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+      }
+      .video-gallery-3-col .video-item {
+          flex: 1 1 calc(33.333% - 14px); /* Three columns (subtract half gap) */
+          max-width: calc(33.333% - 14px);
+      }
+      /* Single column video adjustment */
+      .video-gallery-single-col .video-item {
+          flex: 0 0 100%; /* Full width */
+          max-width: 100%;
+      }
+
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+          .methodology-figures-row, .video-gallery-row {
+              flex-direction: column; /* Stack vertically on small screens */
+              align-items: center; /* Center align */
+          }
+          .methodology-figure-item, .video-item {
+              flex: 1 1 100%; /* Full width */
+              max-width: 80%; /* Adjust image/video width on small screens */
+          }
+          .methodology-figure-item.figure-left1, .methodology-figure-item.figure-right1 {
+              flex: 1 1 100%; /* Full width */
+              max-width: 80%; /* Adjust image/video width on small screens */
+          }
+          .methodology-figure-item.figure-left2, .methodology-figure-item.figure-right2 {
+              flex: 1 1 100%; /* Full width */
+              max-width: 80%; /* Adjust image/video width on small screens */
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="lang-switcher">
+        <a href="../../index_en.html">Go to Author's Page</a>
+      </div>
+      <div class="external-links">
+      </div>
+      <h1 class="header-title">Humanoid Loco-Manipulations <br/>Pattern Generation and Stabilization Control</h1>
+      <p class="header-subtitle header-authors">Masaki Murooka, Kevin Chappellet, Arnaud Tanguy, Mehdi Benallegue, <br/>Iori Kumagai, Mitsuharu Morisawa, Fumio Kanehiro, Abderrahmane Kheddar</p>
+      <p class="header-subtitle header-journal">IEEE Robotics and Automation Letters 2021 <br/>(Presented at IROS 2021)</p>
+    </header>
+
+    <nav>
+    </nav>
+
+    <main>
+      <section id="publication-links-project">
+        <div class="publication-links-project">
+          <ul>
+            <li><a href="https://doi.org/10.1109/LRA.2021.3077858" target="_blank" rel="noopener noreferrer" class="link-button">DOI</a></li>
+            <li><a href="https://arxiv.org/abs/2505.24116" class="link-button">arXiv</a></li>
+            <li><a href="https://www.youtube.com/watch?v=tiNfTSLoMkU" target="_blank" rel="noopener noreferrer" class="link-button">YouTube</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="main-video-extra">
+        <div class="video-gallery-row video-gallery-single-col">
+          <div class="video-item">
+            <video controls playsinline muted loop autoplay>
+              <source src="videos/bobbin_demo_x4.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section id="abstract">
+        <h3>Abstract</h3>
+        <div class="project-details">
+          <p>In order for a humanoid robot to perform loco-manipulation such as moving an object while walking, it is necessary to account for sustained or alternating external forces other than ground-feet reaction, resulting from humanoid-object contact interactions. We propose a bipedal control strategy for humanoid loco-manipulation that can cope with such external forces. First, the basic formulas of the bipedal dynamics, i.e., linear inverted pendulum mode and divergent component of motion, are derived, taking into account the effects of external manipulation forces. Then, we propose a pattern generator to plan center of mass trajectories consistent with the reference trajectory of the manipulation forces, and a stabilizer to compensate for the error between desired and actual manipulation forces. The effectiveness of our controller is assessed both in simulation and loco-manipulation experiments with real humanoid robots.</p>
+        </div>
+      </section>
+
+      <section id="methodology">
+        <h3>Methodology</h3>
+        <p>We propose a control strategy, which can cope with external manipulation forces, for humanoid loco-manipulation. Specifically, we extend two control layers: the pattern generator based on the preview control and the stabilizer based on the divergent component of motion (DCM) feedback control. These control methods are based on the usual formulas of bipedal dynamics, i.e., linear inverted pendulum mode (LIPM) and DCM dynamics. By re-deriving and re-examining these key formulas taking into account external manipulation forces, the proposed control can accurately handle the following two points that were ignored in the conventional controls of humanoid loco-manipulation:</p>
+        <ul>
+          <li>Incorporating the effect of manipulation vertical forces without approximation in the walking pattern generation.</li>
+          <li>Explicitly compensating for the error of manipulation forces in the stabilizer.</li>
+        </ul>
+        <div class="methodology-figures-row">
+          <figure class="methodology-figure-item figure-left1">
+            <img src="images/system.jpg" alt="Overall components for humanoid loco-manipulation.">
+            <figcaption>Overall components for humanoid loco-manipulation.</figcaption>
+          </figure>
+          <figure class="methodology-figure-item figure-right1">
+            <img src="images/newton-euler.jpg" alt="Humanoid loco-manipulation dynamics.">
+            <figcaption>Humanoid loco-manipulation dynamics.</figcaption>
+          </figure>
+        </div>
+        <p>In the stabilizer's procedure, we extend "DCM Feedback Control" to account for external manipulation forces. We employ two strategies to maintain balance in response to external manipulation force errors: the CoM strategy and the ZMP strategy. The CoM strategy can handle larger errors than the ZMP strategy, which is constrained by the sole region. Conversely, the ZMP strategy can respond to errors faster compared to the CoM strategy. The latter necessitates whole-body robot motions. Our stabilizer separates the errors in the frequency domain and applies these strategies in a complementary manner.</p>
+        <div class="methodology-figures-row">
+          <figure class="methodology-figure-item figure-left2">
+            <img src="images/st.jpg" alt="Calculation procedure of the stabilizer.">
+            <figcaption>Calculation procedure of the stabilizer.</figcaption>
+          </figure>
+          <figure class="methodology-figure-item figure-right2">
+            <img src="images/st-strategy.jpg" alt="CoM strategy and ZMP strategy in the stabilizer.">
+            <figcaption>CoM strategy and ZMP strategy in the stabilizer.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="sim-test">
+        <h3>Simulation Tests</h3>
+        <p>The proposed pattern generator and stabilizer are assessed with three test cases with the dynamics simulator Choreonoid.</p>
+        <div class="video-gallery-row video-gallery-single-col">
+          <div class="video-item">
+            <video controls playsinline muted loop autoplay>
+              <source src="videos/pg-x.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="video-gallery-row video-gallery-single-col">
+          <div class="video-item">
+            <video controls playsinline muted loop autoplay>
+              <source src="videos/pg-z.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="video-gallery-row video-gallery-single-col">
+          <div class="video-item">
+            <video controls playsinline muted loop autoplay>
+              <source src="videos/st-disturb.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section id="sim-experiment">
+        <h3>Simulation Experiments</h3>
+        <p>With the proposed controller, the humanoid robots robustly perform loco-manipulation of large and heavy objects on floors with non-uniform friction and uneven surfaces.</p>
+        <div class="video-gallery-row video-gallery-single-col">
+          <div class="video-item">
+            <video controls playsinline muted loop autoplay>
+              <source src="videos/exp-box.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="video-gallery-row video-gallery-single-col">
+          <div class="video-item">
+            <video controls playsinline muted loop autoplay>
+              <source src="videos/exp-cart.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section id="real-experiment">
+        <h3>Real-world Experiments</h3>
+        <p>The life-size humanoid robot HRP-5P robustly transported a cylindrical object about 1.3 m in diameter and up to 140 kg in weight.</p>
+        <div class="video-gallery-row video-gallery-single-col">
+          <div class="video-item">
+            <video controls playsinline muted loop autoplay>
+              <source src="videos/exp-bobbin.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section id="main-video">
+        <h3>Main Video</h3>
+        <div class="video-container">
+          <!-- YouTube動画の埋め込み。autoplay=1&mute=1&loop=1&playlist=<VIDEO_ID>で自動再生、ミュート、ループ設定可能 -->
+          <iframe src="https://www.youtube.com/embed/tiNfTSLoMkU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section id="citation">
+        <h3>Citation</h3>
+        <pre><code>@ARTICLE{LocomanipControl:Murooka:RAL2021,
+  author={Masaki Murooka and Kevin Chappellet and Arnaud Tanguy and Mehdi Benallegue and Iori Kumagai and Mitsuharu Morisawa and Fumio Kanehiro and Abderrahmane Kheddar},
+  journal={IEEE Robotics and Automation Letters},
+  title={Humanoid Loco-Manipulations Pattern Generation and Stabilization Control},
+  year={2021},
+  volume={6},
+  number={3},
+  pages={5597-5604},
+  doi={10.1109/LRA.2021.3077858}
+}</code></pre>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,438 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative; /* 言語切り替えボタンと外部リンクの位置決めに必要 */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.0em; /* 名前を大きく表示 */
+    padding-top: 20px; /* 外部リンクとの間隔 */
+    margin-bottom: 0; /* 学位との間隔を調整 */
+}
+
+/* 新規追加: 学位表示のスタイル */
+.degree {
+    font-size: 1.0em; /* 名前より小さく */
+    color: #ddd; /* 少し薄い色で */
+    margin-top: 0px; /* 名前との間隔を詰める */
+    margin-bottom: 0;
+}
+
+/* 言語切り替えリンク */
+.lang-switcher {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 0.9em;
+}
+
+.lang-switcher a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+}
+
+.lang-switcher a:hover {
+    background: #555;
+}
+
+/* ヘッダー内の外部サイトリンク */
+.external-links {
+    position: absolute;
+    top: 15px;
+    left: 20px; /* 左側に配置 */
+    font-size: 0.9em;
+}
+
+.external-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+    margin-right: 5px; /* リンク間のスペース */
+}
+
+.external-links a:hover {
+    background: #555;
+}
+
+nav {
+    background: #444;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* レスポンシブ対応でメニューが折り返されるように */
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* ドロップダウンの基準 */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+    display: block; /* クリック可能範囲を広げる */
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* ドロップダウンメニューのコンテナ */
+.dropdown {
+    display: inline-block; /* 他のナビゲーション項目と同じ並びにする */
+}
+
+/* ドロップダウンのボタン（「プロジェクト」のリンク） */
+.dropbtn {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+    display: block; /* クリック可能範囲を広げる */
+}
+
+/* ドロップダウンコンテンツ（リスト部分） */
+.dropdown-content {
+    display: none; /* デフォルトでは非表示 */
+    position: absolute; /* 親要素 .dropdown を基準に配置 */
+    background-color: #f9f9f9; /* ドロップダウンの背景色 */
+    min-width: 200px; /* 最小幅 */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* 影 */
+    z-index: 10; /* 他のコンテンツの上に表示 (z-indexを高く設定) */
+    border-radius: 5px;
+    left: 0; /* 親要素の左端に揃える */
+    top: 100%; /* 親要素の真下に表示 */
+}
+
+/* ドロップダウンコンテンツ内のリンク */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; /* 各リンクをブロック要素にする */
+    text-align: left; /* テキストを左寄せ */
+    transition: background-color 0.3s ease;
+    font-size: 0.8em; /* ドロップダウンメニュー内の文字を小さくする */
+}
+
+/* ドロップダウンコンテンツ内のリンクにホバーした時の色 */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* .dropdown にカーソルが乗った時に .dropdown-content を表示 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* nav ul li a:hover との競合を避けるため、dropbtn のホバーも定義 */
+.dropbtn:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2, h3 {
+    color: #007bff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.research-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 15px;
+}
+
+.research-item:last-child {
+    border-bottom: none;
+}
+
+.research-details {
+    flex-grow: 1;
+}
+
+.research-image {
+    width: 700px; /* 画像の幅を調整 */
+    height: auto;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex-shrink: 0; /* 画像が縮小しないように */
+}
+
+
+.publication-item {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: flex-start; /* 画像とテキストの開始位置を揃える */
+}
+
+.publication-image {
+    flex: 0 0 250px; /* 画像エリアの固定幅 */
+    margin-right: 20px;
+}
+
+.publication-image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.publication-details {
+    flex-grow: 1;
+}
+
+.publication-details h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    border-bottom: none; /* 論文タイトルには下線不要 */
+}
+
+/* 論文詳細内の一般的なPタグへのスタイル（リンク部分に影響しないように） */
+.publication-details p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* --- Publication Links (新しく追加・修正する部分) --- */
+.publication-links {
+    display: flex; /* ボタンを横並びにする */
+    flex-wrap: wrap; /* 画面幅が狭い場合に折り返す */
+    gap: 8px; /* ボタン間の隙間 */
+    margin-top: 10px; /* 上部に少しマージン */
+    margin-bottom: 10px; /* 下部に少しマージン */
+}
+
+.publication-links .link-button {
+    display: inline-block; /* インライン要素だがブロック要素のように幅・高さ・マージンを指定できるようにする */
+    min-width: 80px; /* ここでボタンの最低幅を指定。この値を調整して幅を広げてください */
+    padding: 6px 12px; /* 内側の余白 */
+    background-color: #007bff; /* 背景色 */
+    color: white; /* 文字色 */
+    text-align: center; /* テキストを中央寄せ */
+    text-decoration: none; /* 下線を削除 */
+    border-radius: 4px; /* 角を丸くする */
+    transition: background-color 0.3s ease; /* ホバー時のアニメーション */
+    box-sizing: border-box; /* paddingとborderを幅に含める */
+    font-size: 0.9em; /* 文字サイズを少し小さくする（任意） */
+}
+
+.publication-links .link-button:hover {
+    background-color: #0056b3; /* ホバー時の背景色 */
+}
+/* --- End of Publication Links --- */
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* 共通ボタンのスタイル */
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* publications.html で使用するスタイル */
+.publication-category h3 {
+    background-color: #e2e2e2;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.publication-list ul {
+    list-style: none;
+    padding: 0;
+}
+.publication-list li {
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 15px;
+}
+.publication-list li:last-child {
+    border-bottom: none;
+}
+.publication-list .paper-title {
+    font-weight: bold;
+    color: #333;
+}
+.publication-list .authors {
+    font-size: 0.95em;
+    color: #555;
+}
+.publication-list .journal-info {
+    font-size: 0.9em;
+    color: #777;
+}
+.publication-list .links a {
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+.award-list ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.award-list li {
+    margin-bottom: 10px;
+}
+
+/* software.html 固有のスタイル */
+.software-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #eee;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.software-item:last-child {
+    border-bottom: none;
+}
+.software-thumbnail {
+    flex: 0 0 200px; /* サムネイルの固定幅 */
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.software-details {
+    flex-grow: 1;
+}
+.software-details h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+.software-details .links a {
+    margin-right: 15px;
+    font-size: 0.95em;
+}
+.software-details .links a:hover {
+    text-decoration: underline;
+}
+.software-details p {
+    margin-bottom: 10px;
+}
+
+/* レスポンシブデザインの調整 */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    .lang-switcher, .external-links {
+        position: static; /* 小さい画面では静的に配置 */
+        text-align: center;
+        padding: 5px 0;
+    }
+    .external-links a {
+        margin: 0 5px;
+    }
+    header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    main {
+        padding: 10px;
+        margin: 10px auto;
+    }
+    .research-item, .publication-item, .software-item, .project-overview {
+        flex-direction: column;
+        align-items: center;
+    }
+    .research-image, .publication-image, .software-thumbnail, .project-overview img {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 80%; /* 小さい画面での画像幅調整 */
+        max-width: 300px;
+    }
+    .publication-details, .research-details, .software-details, .project-details {
+        text-align: center;
+    }
+    .figure-gallery {
+        grid-template-columns: 1fr; /* 小さい画面では1列に */
+    }
+}
