@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanoid Imitation Learning with Tactile Modality</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+      /* このページ固有のスタイル（もしあれば） */
+      .project-overview {
+          display: flex;
+          align-items: flex-start;
+          gap: 30px;
+          margin-bottom: 30px;
+          flex-wrap: wrap; /* Responsive */
+      }
+      .project-overview img {
+          max-width: 400px;
+          height: auto;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+      }
+      .project-details {
+          flex-grow: 1;
+      }
+      .figure-gallery {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 20px;
+          margin-top: 30px;
+      }
+      .figure-gallery img {
+          width: 100%;
+          height: auto;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          cursor: zoom-in; /* Hint for zoom on click */
+      }
+      .figure-gallery figcaption {
+          text-align: center;
+          font-size: 0.9em;
+          color: #666;
+          margin-top: 5px;
+      }
+
+      .publication-links-project ul {
+          list-style: none; /* Remove bullet points */
+          padding: 0;
+          display: flex; /* Arrange buttons horizontally */
+          flex-wrap: wrap; /* Wrap buttons on small screens */
+          gap: 10px; /* Space between buttons */
+          justify-content: center; /* Center align buttons */
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+      .publication-links-project li {
+          margin: 0; /* Remove default li margin */
+      }
+      .publication-links-project .link-button {
+          display: inline-block; /* Allows setting width/height/margin like block element */
+          min-width: 100px; /* Minimum button width */
+          padding: 8px 15px;
+          background-color: #007bff; /* Background color */
+          color: white; /* Text color */
+          text-align: center; /* Center text */
+          text-decoration: none; /* Remove underline */
+          border-radius: 5px; /* Rounded corners */
+          transition: background-color 0.3s ease; /* Hover animation */
+          box-sizing: border-box; /* Include padding and border in width */
+      }
+      .publication-links-project .link-button:hover {
+          background-color: #0056b3; /* Hover background color */
+      }
+
+      /* Project page specific header/navigation adjustments */
+      header .external-links { /* Hide external links in project page header */
+          display: none;
+      }
+      header .lang-switcher a { /* Styling for "Go to Author's Page" link */
+          padding: 8px 12px;
+          border: 1px solid #fff;
+          border-radius: 5px;
+          font-size: 1em;
+      }
+      header .lang-switcher a:hover {
+          background: #007bff;
+          border-color: #007bff;
+      }
+      nav { /* Hide navigation bar */
+          display: none;
+      }
+
+      /* Header text styles */
+      .header-title {
+        color:white;
+        text-decoration:none;
+        margin-top: 20px;
+      }
+      .header-subtitle {
+        color:#ddd;
+        margin-top: 20px;
+      }
+      .header-authors {
+        font-size:1.3em;
+      }
+      .header-journal {
+        font-size:1.0em;
+      }
+
+      /* Main Video specific style */
+      .video-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+          height: 0;
+          overflow: hidden;
+          margin-bottom: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+      }
+
+      /* BibTeX code block style */
+      #citation pre {
+          background-color: #f4f4f4;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          padding: 15px;
+          overflow-x: auto; /* Enable horizontal scroll */
+          font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+          font-size: 0.9em;
+          line-height: 1.5;
+          color: #333;
+      }
+      #citation code {
+          display: block; /* Make code element a block */
+          white-space: pre-wrap; /* Wrap text automatically */
+          word-wrap: break-word; /* Break long words */
+      }
+
+      /* Methodology section image container styles */
+      .figure-container {
+          text-align: center; /* Center image */
+          margin-bottom: 20px;
+      }
+      .figure-container figcaption {
+          font-size: 0.9em;
+          color: #444;
+          margin-top: 5px;
+      }
+      .methodology-image {
+          max-width: 100%;
+          height: auto;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          display: block; /* Block element for centering */
+          margin: 0 auto; /* Center align */
+      }
+
+      /* Methodology section horizontal image styles */
+      .methodology-figures-row {
+          display: flex;
+          flex-wrap: wrap; /* Wrap on small screens */
+          justify-content: center; /* Center align */
+          gap: 20px; /* Space between images */
+          margin-top: 20px;
+          margin-bottom: 20px;
+          align-items: flex-end; /* Align figures to the bottom */
+      }
+      .methodology-figure-item {
+          flex: 1 1 calc(50% - 10px); /* Two columns (subtract half gap) */
+          max-width: calc(50% - 10px); /* Two columns (subtract half gap) */
+          box-sizing: border-box; /* Include padding and border in width */
+          text-align: center;
+          margin: 0; /* Reset default figure margin */
+      }
+      .methodology-figure-item img {
+          width: 100%;
+          height: auto;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+      }
+      .methodology-figure-item figcaption {
+          font-size: 0.9em;
+          color: #444;
+          margin-top: 5px;
+      }
+
+      /* Video gallery styles */
+      .video-gallery-row {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px; /* Space between videos */
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+      .video-gallery-row figcaption {
+          font-size: 0.9em;
+          color: #444;
+      }
+      .video-gallery-row-double-cols figcaption {
+          margin-top: -16px; /* Reduce space between video and caption */
+      }
+      .video-item {
+          flex: 1 1 calc(50% - 10px); /* Two columns */
+          max-width: calc(50% - 10px);
+          box-sizing: border-box;
+          text-align: center;
+      }
+      .video-item video {
+          width: 100%;
+          height: auto;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+      }
+      .video-gallery-3-col .video-item {
+          flex: 1 1 calc(33.333% - 14px); /* Three columns (subtract half gap) */
+          max-width: calc(33.333% - 14px);
+      }
+      /* Single column video adjustment */
+      .video-gallery-single-col .video-item {
+          flex: 0 0 100%; /* Full width */
+          max-width: 100%;
+      }
+
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+          .methodology-figures-row, .video-gallery-row {
+              flex-direction: column; /* Stack vertically on small screens */
+              align-items: center; /* Center align */
+          }
+          .methodology-figure-item, .video-item {
+              flex: 1 1 100%; /* Full width */
+              max-width: 80%; /* Adjust image/video width on small screens */
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="lang-switcher">
+        <a href="../../index_en.html">Go to Author's Page</a>
+      </div>
+      <div class="external-links">
+      </div>
+      <h1 class="header-title">TACT: Humanoid Whole-body Contact Manipulation through <br/> Deep Imitation Learning with Tactile Modality</h1>
+      <p class="header-subtitle header-authors">Masaki Murooka, Takahiro Hoshi, Kensuke Fukumitsu, Shimpei Masuda, <br> Marwan Hamze, Tomoya Sasaki, Mitsuharu Morisawa, Eiichi Yoshida</p>
+      <p class="header-subtitle header-journal">IEEE Robotics and Automation Letters 2025</p>
+    </header>
+
+    <nav>
+    </nav>
+
+    <main>
+      <section id="publication-links-project">
+        <div class="publication-links-project">
+          <ul>
+            <li><a href="https://doi.org/10.1109/LRA.2025.3580329" target="_blank" rel="noopener noreferrer" class="link-button">DOI</a></li>
+            <li><a href="" class="link-button">arXiv</a></li>
+            <li><a href="" target="_blank" rel="noopener noreferrer" class="link-button">YouTube</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="main-video-extra">
+        <div class="video-gallery-row video-gallery-single-col">
+          <div class="video-item">
+            <video controls playsinline muted loop autoplay>
+              <source src="videos/top.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section id="abstract">
+        <h3>Abstract</h3>
+        <div class="project-details">
+          <p>Manipulation with whole-body contact by humanoid robots offers distinct advantages, including enhanced stability and reduced load. On the other hand, we need to address challenges such as the increased computational cost of motion generation and the difficulty of measuring broad-area contact. We therefore have developed a humanoid control system that allows a humanoid robot equipped with tactile sensors on its upper body to learn a policy for whole-body manipulation through imitation learning based on human teleoperation data. This policy, named tactile-modality extended ACT (TACT), has a feature to take multiple sensor modalities as input, including joint position, vision, and tactile measurements. Furthermore, by integrating this policy with retargeting and locomotion control based on a biped model, we demonstrate that the life-size humanoid robot RHP7 Kaleido is capable of achieving whole-body contact manipulation while maintaining balance and walking. Through detailed experimental verification, we show that inputting both vision and tactile modalities into the policy contributes to improving the robustness of manipulation involving broad and delicate contact.</p>
+        </div>
+      </section>
+
+      <section id="methodology">
+        <h3>Methodology</h3>
+        <p>We propose a learning-based control system that enables a humanoid to achieve loco-manipulation with delicate and rich contact. This system is achieved by mounting distributed tactile sensors on the upper body and applying control based on the measurements from these sensors. The core of the control system is a Transformer-based policy that processes multimodal inputs, including tactile, visual, and proprioception (joint position) data, and generates actions for the future horizon. The sensory-motor data necessary for model training is obtained through online teleoperation of the robot, wherein the posture of a human wearing pose trackers on the upper body is retargeted to the humanoid.</p>
+        <div class="figure-container">
+          <img src="images/intro.jpg" alt="Humanoid manipulation through imitation learning with tactile modality." class="methodology-image">
+          <figcaption>Humanoid manipulation through imitation learning with tactile modality.</figcaption>
+        </div>
+        <p>The architecture of our control system comprises two distinct layers: an upper layer responsible for generating manipulation motions with tactile feedback, and a lower layer that handles retargeting and locomotion control. In model-based retargeting and locomotion control, it guarantees the physical constraints of the robot, while in learning-based manipulation control, it generates whole-body contact motions that require complex skills.</p>
+        <div class="figure-container">
+          <img src="images/system3.jpg" alt="Humanoid control system for whole-body contact manipulation with tactile feedback." class="methodology-image">
+          <figcaption>Humanoid control system for whole-body contact manipulation with tactile feedback.</figcaption>
+        </div>
+        <p>The posture of the human upper body is measured and retargeted to the humanoid in real time. The human operator wears trackers that can measure 3D poses on the waist, elbows, and wrists. The target poses for the robot's elbows and wrists relative to the robot's waist are calculated from the measured poses for the human elbows and wrists relative to the human waist.</p>
+        <p>The TACT model is based on a conditional variational autoencoder (CVAE), and consists of an encoder, a decoder, and a condition block. The encoder and decoder are implemented using Transformers, while ResNet18 is used for image feature extraction. The key difference from ACT lies in the inclusion of tactile measurements: they are flattened into a 1D vector, linearly projected into a token, and fed into both the encoder and condition blocks. This allows the Transformer to learn correlations between tactile input and other modalities for whole-body contact manipulation.</p>
+        <div class="methodology-figures-row">
+          <figure class="methodology-figure-item">
+            <img src="images/retarget-locomotion.jpg" alt="Retargeting and locomotion control.">
+            <figcaption>Retargeting and locomotion control.</figcaption>
+          </figure>
+          <figure class="methodology-figure-item">
+            <img src="images/act2.jpg" alt="Model structure of TACT (tactile-modality extended ACT).">
+            <figcaption>Model structure of TACT (tactile-modality extended ACT).</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="bag-experiment">
+        <h3>Manipulation of a Plastic Bag</h3>
+        <p>The robot lifts a large plastic bag in two different ways; one is to grasp the top of the bag with one hand and hold it with the other arm, and the other is to hold it with both arms from both sides. For each motion, we collected 8 episodes of demonstration data and trained individual policies. It was shown that the proposed method can be applied to manipulation motions in which the robot contacts the object simultaneously at many parts of the body, including the forearm and the chest.</p>
+        <div class="video-gallery-row video-gallery-single-col">
+          <div class="video-item">
+            <video controls playsinline muted loop autoplay>
+              <source src="videos/bag_grasp_teleop.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="video-gallery-row video-gallery-single-col">
+          <div class="video-item">
+            <video controls playsinline muted loop autoplay>
+              <source src="videos/bag_rollout.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section id="box-experiment">
+        <h3>Manipulation of a Paper Box</h3>
+        <p>Since the tactile modality is particularly important for manipulations that require fine adjustment of the contact force, we chose a task in which the robot uses both arms to hold up a fragile box made of thin paper folded and glued with sponge on both sides. To prevent the object from rotating, the robot needs to make contact with the surface of the forearm and wrist, which requires richer contact than pick-and-place with a gripper. In addition, because paper boxes are fragile and easily crushed, the delicate contact must be controlled to avoid applying too much force.</p>
+        <p>We evaluated the success rate of the same task with the proposed <strong>TACT</strong> policy and three baseline policies. The first baseline is a policy that replays the human teleoperation data as-is (<strong>Replay</strong>). The other two baselines are policies that remove the vision modality from TACT (<strong>TACT w/o vision</strong>) and the tactile modality (<strong>TACT w/o tactile</strong>, which is identical to the original ACT). The experiment results confirm that policies that handle both visual and tactile modalities, such as TACT, are essential for delicate whole-body contact manipulation.</p>
+        <div class="video-gallery-row video-gallery-single-col">
+          <div class="video-item">
+            <video controls playsinline muted loop autoplay>
+              <source src="videos/box_large.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="video-gallery-row video-gallery-single-col">
+          <div class="video-item">
+            <video controls playsinline muted loop autoplay>
+              <source src="videos/box_medium.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="video-gallery-row video-gallery-single-col">
+          <div class="video-item">
+            <video controls playsinline muted loop autoplay>
+              <source src="videos/box_unseen.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section id="sim-experiment">
+        <h3>Simulation Validation</h3>
+        <p>To further evaluate the proposed method, we constructed a simulation environment using the MuJoCo physics engine. The robot was equipped with <a href="https://github.com/isri-aist/MujocoTactileSensorPlugin" target="_blank" rel="noopener noreferrer">simulated tactile sensor patches composed of hexagonally arranged cells</a>, replicating the configuration of the real robot. The robot performed a box reorientation task with complex contact transitions, tilting a box on a table by 90 degrees using both arms. The proposed TACT policy outperformed the baselines TACT w/o vision and TACT w/o tactile, showing consistent results with the real-world experiments despite differences in domain and task.</p>
+        <div class="video-gallery-row video-gallery-single-col">
+          <div class="video-item">
+            <video controls playsinline muted loop autoplay>
+              <source src="videos/sim.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section id="main-video">
+        <h3>Main Video</h3>
+        <div class="video-container">
+          <!-- YouTube動画の埋め込み。autoplay=1&mute=1&loop=1&playlist=<VIDEO_ID>で自動再生、ミュート、ループ設定可能 -->
+          <iframe src="https://www.youtube.com/embed/I0OZYr-53uU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section id="citation">
+        <h3>Citation</h3>
+        <pre><code>@ARTICLE{HumanoidTactileImitationLearning:Murooka:RAL2025,
+  author={Masaki Murooka and Takahiro Hoshi and Kensuke Fukumitsu and Shimpei Masuda and Marwan Hamze and Tomoya Sasaki and Mitsuharu Morisawa and Eiichi Yoshida},
+  journal={IEEE Robotics and Automation Letters},
+  title={TACT: Humanoid Whole-body Contact Manipulation through Deep Imitation Learning with Tactile Modality},
+  year={2025},
+  volume={},
+  number={},
+  pages={},
+  doi={10.1109/LRA.2025.3580329}
+}</code></pre>
+      </section>
+    </main>
+  </body>
+</html>
