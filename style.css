@@ -246,6 +246,11 @@ ul {
     margin-bottom: 5px;
 }
 
+.equal-contribution {
+  font-size: 0.75em;
+  color: #333;
+}
+
 /* --- Publication Links (新しく追加・修正する部分) --- */
 .publication-links {
     display: flex; /* ボタンを横並びにする */
