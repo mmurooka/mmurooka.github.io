@@ -442,6 +442,9 @@ footer {
         width: 80%; /* 小さい画面での画像幅調整 */
         max-width: 300px;
     }
+    .publication-image {
+        flex-basis: auto;
+    }
     .publication-details, .research-details, .software-details, .project-details {
         text-align: center;
     }
