@@ -23,6 +23,12 @@ header h1 {
     margin-bottom: 0; /* 学位との間隔を調整 */
 }
 
+.site-title-link {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
 /* 新規追加: 学位表示のスタイル */
 .degree {
     font-size: 1.0em; /* 名前より小さく */
