@@ -44,10 +44,14 @@
       }
       .publication-list .journal-info {
           font-size: 0.9em;
-          color: #777;
+          color: #444;
           margin-bottom: 0px; /* Reduced space below journal info */
           margin-top: 0px; /* Ensure small top margin */
           line-height: 1.3; /* Adjust line height for compactness */
+      }
+      .publication-list .journal-info strong {
+          color: #0056b3;
+          font-weight: 700;
       }
       /* Style for the inline link container within journal-info */
       .publication-list .journal-info .inline-links {
@@ -121,11 +125,15 @@
       }
       /* Style for award info (matching authors) */
       .award-list .award-info {
-          font-size: 0.95em; /* Inherit from .authors */
-          color: #555; /* Inherit from .authors */
+          font-size: 0.9em; /* Match .journal-info */
+          color: #444;
           margin: 0; /* Remove default margins to control spacing explicitly */
           padding: 0; /* Remove default padding */
           line-height: 1.3;
+      }
+      .award-list .award-info strong {
+          color: #0056b3;
+          font-weight: 700;
       }
       /* Style for award description (matching journal-info) */
       .award-list .award-description {
@@ -177,7 +185,7 @@
               <li>
                 <p class="paper-title">RoboManipBaselines: A unified framework for imitation learning in robotic manipulation across real and simulation environments</p>
                 <p class="authors"><u>Masaki Murooka</u>, Tomohiro Motoda, Ryoichi Nakajo, Hanbit Oh, Koshi Makihara, Keisuke Shirai, Tetsuya Ogata, Yukiyasu Domae</p>
-                <p class="journal-info">IEEE Access, vol. 14, pp. 97896-97909, 2026.
+                <p class="journal-info"><strong>IEEE Access</strong>, vol. 14, pp. 97896-97909, 2026.
                   <span class="inline-links">
                     <a href="https://isri-aist.github.io/RoboManipBaselines-ProjectPage" target="_blank" rel="noopener noreferrer">[Project]</a> |
                     <a href="https://doi.org/10.1109/ACCESS.2026.3691054" target="_blank" rel="noopener noreferrer">[DOI]</a> |
@@ -188,7 +196,7 @@
               <li>
                 <p class="paper-title">Self-augmented robot trajectory: Efficient imitation learning via safe self-augmentation with demonstrator-annotated precision</p>
                 <p class="authors">Hanbit Oh<sup>&dagger;</sup>, <u>Masaki Murooka</u><sup>&dagger;</sup>, Tomohiro Motoda, Ryoichi Nakajo, Yukiyasu Domae</p>
-                <p class="journal-info">Advanced Robotics, vol. 40, no. 15, pp. 1000-1014, 2026 (Presented at IROS 2026).
+                <p class="journal-info"><strong>Advanced Robotics</strong>, vol. 40, no. 15, pp. 1000-1014, 2026 (Presented at IROS 2026).
                   <span class="inline-links">
                     <a href="https://sites.google.com/view/sart-il" target="_blank" rel="noopener noreferrer">[Project]</a> |
                     <a href="https://www.tandfonline.com/doi/full/10.1080/01691864.2026.2631642" target="_blank" rel="noopener noreferrer">[DOI]</a> |
@@ -199,7 +207,7 @@
               <li>
                 <p class="paper-title">TACT: Humanoid whole-body contact manipulation through deep imitation learning with tactile modality</p>
                 <p class="authors"><u>Masaki Murooka</u>, Takahiro Hoshi, Kensuke Fukumitsu, Shimpei Masuda, Marwan Hamze, Tomoya Sasaki, Mitsuharu Morisawa, Eiichi Yoshida</p>
-                <p class="journal-info">IEEE Robotics and Automation Letters, vol. 10, no. 8, pp. 7819-7826, 2025 (Presented at Humanoids 2025).
+                <p class="journal-info"><strong>IEEE Robotics and Automation Letters (RA-L)</strong>, vol. 10, no. 8, pp. 7819-7826, 2025 (Presented at Humanoids 2025).
                   <span class="inline-links">
                     <a href="projects/tactile-imitation-2025/index.html" target="_blank" rel="noopener noreferrer">[Project]</a> |
                     <a href="https://doi.org/10.1109/LRA.2025.3580329" target="_blank" rel="noopener noreferrer">[DOI]</a> |
@@ -210,7 +218,7 @@
               <li>
                 <p class="paper-title">Whole-body multi-contact motion control for humanoid robots based on distributed tactile sensors</p>
                 <p class="authors"><u>Masaki Murooka</u>, Kensuke Fukumitsu, Marwan Hamze, Mitsuharu Morisawa, Hiroshi Kaminaga, Fumio Kanehiro, Eiichi Yoshida</p>
-                <p class="journal-info">IEEE Robotics and Automation Letters, vol. 9, no. 11, pp. 10620-10627, 2024.
+                <p class="journal-info"><strong>IEEE Robotics and Automation Letters (RA-L)</strong>, vol. 9, no. 11, pp. 10620-10627, 2024.
                   <span class="inline-links">
                     <a href="projects/tactile-multicontact-2024/index.html" target="_blank" rel="noopener noreferrer">[Project]</a> |
                     <a href="https://doi.org/10.1109/LRA.2024.3475052" target="_blank" rel="noopener noreferrer">[DOI]</a> |
@@ -221,7 +229,7 @@
               <li>
                 <p class="paper-title">Centroidal trajectory generation and stabilization based on preview control for humanoid multi-contact motion</p>
                 <p class="authors"><u>Masaki Murooka</u>, Mitsuharu Morisawa, Fumio Kanehiro</p>
-                <p class="journal-info">IEEE Robotics and Automation Letters, vol. 7, no. 3, pp. 8225-8232, 2022 (Presented at IROS 2022).
+                <p class="journal-info"><strong>IEEE Robotics and Automation Letters (RA-L)</strong>, vol. 7, no. 3, pp. 8225-8232, 2022 (Presented at IROS 2022).
                   <span class="inline-links">
                     <a href="projects/multicontact-preview-control-2022/index.html" target="_blank" rel="noopener noreferrer">[Project]</a> |
                     <a href="https://doi.org/10.1109/LRA.2022.3186515" target="_blank" rel="noopener noreferrer">[DOI]</a> |
@@ -232,7 +240,7 @@
               <li>
                 <p class="paper-title">Humanoid loco-manipulations pattern generation and stabilization control</p>
                 <p class="authors"><u>Masaki Murooka</u>, Kevin Chappellet, Arnaud Tanguy, Mehdi Benallegue, Iori Kumagai, Mitsuharu Morisawa, Fumio Kanehiro, Abderrahmane Kheddar</p>
-                <p class="journal-info">IEEE Robotics and Automation Letters, vol. 6, no. 3, pp. 5597-5604, 2021 (Presented at IROS 2021).
+                <p class="journal-info"><strong>IEEE Robotics and Automation Letters (RA-L)</strong>, vol. 6, no. 3, pp. 5597-5604, 2021 (Presented at IROS 2021).
                   <span class="inline-links">
                     <a href="projects/locomanip-control-2021/index.html" target="_blank" rel="noopener noreferrer">[Project]</a> |
                     <a href="https://doi.org/10.1109/LRA.2021.3077858" target="_blank" rel="noopener noreferrer">[DOI]</a> |
@@ -243,7 +251,7 @@
               <li>
                 <p class="paper-title">Humanoid loco-manipulation planning based on graph search and reachability maps</p>
                 <p class="authors"><u>Masaki Murooka</u>, Iori Kumagai, Mitsuharu Morisawa, Fumio Kanehiro, Abderrahmane Kheddar</p>
-                <p class="journal-info">IEEE Robotics and Automation Letters, vol. 6, no. 2, pp. 1840-1847, 2021 (Presented at ICRA 2021).
+                <p class="journal-info"><strong>IEEE Robotics and Automation Letters (RA-L)</strong>, vol. 6, no. 2, pp. 1840-1847, 2021 (Presented at ICRA 2021).
                   <span class="inline-links">
                     <a href="projects/locomanip-planning-2021/index.html" target="_blank" rel="noopener noreferrer">[Project]</a> |
                     <a href="https://doi.org/10.1109/LRA.2021.3060728" target="_blank" rel="noopener noreferrer">[DOI]</a> |
@@ -254,7 +262,7 @@
               <li>
                 <p class="paper-title">Optimization-based posture generation for whole-body contact motion by contact point search on the body surface</p>
                 <p class="authors"><u>Masaki Murooka</u>, Kei Okada, Masayuki Inaba</p>
-                <p class="journal-info">IEEE Robotics and Automation Letters, vol. 5, no. 2, pp. 2905-2912, 2020 (Presented at ICRA 2020).
+                <p class="journal-info"><strong>IEEE Robotics and Automation Letters (RA-L)</strong>, vol. 5, no. 2, pp. 2905-2912, 2020 (Presented at ICRA 2020).
                   <span class="inline-links">
                     <a href="projects/wholebody-contact-optimization-2020/index.html" target="_blank" rel="noopener noreferrer">[Project]</a> |
                     <a href="https://doi.org/10.1109/LRA.2020.2974689" target="_blank" rel="noopener noreferrer">[DOI]</a> |
@@ -265,7 +273,7 @@
               <li>
                 <p class="paper-title">Global planning of whole-body manipulation by humanoid robot based on transition graph of object motion and contact switching</p>
                 <p class="authors"><u>Masaki Murooka</u>, Ryohei Ueda, Shunichi Nozawa, Yohei Kakiuchi, Kei Okada, Masayuki Inaba</p>
-                <p class="journal-info">Advanced Robotics, vol. 31, no. 6, pp. 322-340, 2017.
+                <p class="journal-info"><strong>Advanced Robotics</strong>, vol. 31, no. 6, pp. 322-340, 2017.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1080/01691864.2016.1266965" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -282,7 +290,7 @@
               <li>
                 <p class="paper-title">Learning differentiable reachability maps for optimization-based humanoid motion generation</p>
                 <p class="authors"><u>Masaki Murooka</u>, Iori Kumagai, Mitsuharu Morisawa, Fumio Kanehiro</p>
-                <p class="journal-info">IEEE-RAS International Conference on Humanoid Robots (Humanoids), pp. 1-8, 2025.
+                <p class="journal-info"><strong>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</strong>, pp. 1-8, 2025.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/Humanoids65713.2025.11203189" target="_blank" rel="noopener noreferrer">[DOI]</a> |
                     <a href="https://arxiv.org/pdf/2508.11275" target="_blank" rel="noopener noreferrer">[PDF]</a>
@@ -292,7 +300,7 @@
               <li>
                 <p class="paper-title">Whole-body posture evaluation and modification for crane-less servo-off operation of life-sized humanoid robot</p>
                 <p class="authors"><u>Masaki Murooka</u>, Yohei Kakiuchi, Kei Okada, Masayuki Inaba</p>
-                <p class="journal-info">IEEE-RAS International Conference on Humanoid Robots (Humanoids), pp. 755-760, 2018.<span class="award-badge">Best Interactive Paper Award</span>
+                <p class="journal-info"><strong>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</strong>, pp. 755-760, 2018.<span class="award-badge">Best Interactive Paper Award</span>
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/HUMANOIDS.2018.8624917" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -301,7 +309,7 @@
               <li>
                 <p class="paper-title">Simultaneous planning and estimation based on physics reasoning in robot manipulation</p>
                 <p class="authors"><u>Masaki Murooka</u>, Shunichi Nozawa, Masahiro Bando, Iori Yanokura, Kei Okada, Masayuki Inaba</p>
-                <p class="journal-info">IEEE International Conference on Robotics and Automation (ICRA), pp. 3137-3144, 2018.
+                <p class="journal-info"><strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, pp. 3137-3144, 2018.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/ICRA.2018.8463156" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -310,7 +318,7 @@
               <li>
                 <p class="paper-title">Feasibility evaluation of object manipulation by a humanoid robot based on recursive estimation of the object's physical properties</p>
                 <p class="authors"><u>Masaki Murooka</u>, Shunichi Nozawa, Yohei Kakiuchi, Kei Okada, Masayuki Inaba</p>
-                <p class="journal-info">IEEE International Conference on Robotics and Automation (ICRA), pp. 4082-4089, 2017.
+                <p class="journal-info"><strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, pp. 4082-4089, 2017.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/ICRA.2017.7989469" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -319,7 +327,7 @@
               <li>
                 <p class="paper-title">Planning and execution of groping behavior for contact sensor based manipulation in an unknown environment</p>
                 <p class="authors"><u>Masaki Murooka</u>, Ryohei Ueda, Shunichi Nozawa, Yohei Kakiuchi, Kei Okada, Masayuki Inaba</p>
-                <p class="journal-info">IEEE International Conference on Robotics and Automation (ICRA), pp. 3955-3962, 2016.
+                <p class="journal-info"><strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, pp. 3955-3962, 2016.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/ICRA.2016.7487585" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -328,7 +336,7 @@
               <li>
                 <p class="paper-title">Whole-body holding manipulation by humanoid robot based on transition graph of object motion and contact</p>
                 <p class="authors"><u>Masaki Murooka</u>, Yuto Inagaki, Ryohei Ueda, Shunichi Nozawa, Yohei Kakiuchi, Kei Okada, Masayuki Inaba</p>
-                <p class="journal-info">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 3950-3955, 2015.
+                <p class="journal-info"><strong>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>, pp. 3950-3955, 2015.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/IROS.2015.7353933" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -337,7 +345,7 @@
               <li>
                 <p class="paper-title">Whole-body pushing manipulation with contact posture planning of large and heavy object for humanoid robot</p>
                 <p class="authors"><u>Masaki Murooka</u>, Shunichi Nozawa, Yohei Kakiuchi, Kei Okada, Masayuki Inaba</p>
-                <p class="journal-info">IEEE International Conference on Robotics and Automation (ICRA), pp. 5682-5689, 2015.
+                <p class="journal-info"><strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, pp. 5682-5689, 2015.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/ICRA.2015.7139995" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -346,7 +354,7 @@
               <li>
                 <p class="paper-title">Manipulation strategy learning for carrying large objects based on mapping from object physical property to object manipulation action in virtual environment</p>
                 <p class="authors"><u>Masaki Murooka</u>, Shintaro Noda, Shunichi Nozawa, Yohei Kakiuchi, Kei Okada, Masayuki Inaba</p>
-                <p class="journal-info">IEEE International Conference on Automation Science and Engineering (CASE), pp. 263-270, 2014.
+                <p class="journal-info"><strong>IEEE International Conference on Automation Science and Engineering (CASE)</strong>, pp. 263-270, 2014.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/CoASE.2014.6899336" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -355,7 +363,7 @@
               <li>
                 <p class="paper-title">Manipulation strategy decision and execution based on strategy proving operation for carrying large and heavy objects</p>
                 <p class="authors"><u>Masaki Murooka</u>, Shintaro Noda, Shunichi Nozawa, Yohei Kakiuchi, Kei Okada, Masayuki Inaba</p>
-                <p class="journal-info">IEEE International Conference on Robotics and Automation (ICRA), pp. 3425-3432, 2014.<span class="award-badge">Best Conference Paper Award</span>
+                <p class="journal-info"><strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, pp. 3425-3432, 2014.<span class="award-badge">Best Conference Paper Award</span>
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/ICRA.2014.6907352" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -372,7 +380,7 @@
               <li>
                 <p class="paper-title">ヒューマノイドロボットの移動制御: 2 足歩行からロコマニピュレーションまで</p>
                 <p class="authors"><u>室岡 雅樹</u></p>
-                <p class="journal-info">日本ロボット学会誌, 43巻, 8号, pp. 765-770, 2025.<span class="review-badge">解説論文</span>
+                <p class="journal-info"><strong>日本ロボット学会誌</strong>, 43巻, 8号, pp. 765-770, 2025.<span class="review-badge">解説論文</span>
                   <span class="inline-links">
                     <a href="https://doi.org/10.7210/jrsj.43.765" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -381,7 +389,7 @@
               <li>
                 <p class="paper-title">コンフィギュレーションの時変時不変性と隣接性を考慮した時系列逆運動学最適化計算によるロボット運動生成</p>
                 <p class="authors"><u>室岡 雅樹</u>, 垣内 洋平, 岡田 慧, 稲葉 雅幸</p>
-                <p class="journal-info">計測自動制御学会論文集, 55巻, 11号, pp. 664-673, 2019.
+                <p class="journal-info"><strong>計測自動制御学会論文集</strong>, 55巻, 11号, pp. 664-673, 2019.
                   <span class="inline-links">
                     <a href="https://doi.org/10.9746/sicetr.55.664" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -390,7 +398,7 @@
               <li>
                 <p class="paper-title">等身大ヒューマノイドにおける接触姿勢計画と歩行動作修正に基づく大型重量物全身押し操作行動の実現</p>
                 <p class="authors"><u>室岡 雅樹</u>, 小椎尾 侑多, 野沢 峻一, 垣内 洋平, 岡田 慧, 稲葉 雅幸</p>
-                <p class="journal-info">日本ロボット学会誌, vol. 34, no. 7, pp. 448-457, 2016.<span class="award-badge">学会誌論文賞</span>
+                <p class="journal-info"><strong>日本ロボット学会誌</strong>, vol. 34, no. 7, pp. 448-457, 2016.<span class="award-badge">学会誌論文賞</span>
                   <span class="inline-links">
                     <a href="https://doi.org/10.7210/jrsj.34.448" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -399,7 +407,7 @@
               <li>
                 <p class="paper-title">等身大ヒューマノイドにおける物体状態・操作力オンライン推定制御法に基づく大型重量物ピボット運搬行動の実現</p>
                 <p class="authors"><u>室岡 雅樹</u>, 野田 晋太朗, 野沢 峻一, 垣内 洋平, 岡田 慧, 稲葉 雅幸</p>
-                <p class="journal-info">日本ロボット学会誌, vol. 32, no. 7, pp. 595-602, 2014.
+                <p class="journal-info"><strong>日本ロボット学会誌</strong>, vol. 32, no. 7, pp. 595-602, 2014.
                   <span class="inline-links">
                     <a href="https://doi.org/10.7210/jrsj.32.595" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -416,7 +424,7 @@
               <li>
                 <p class="paper-title">RoboManipBaselines v3: ロボット模倣学習研究を支援するオープンソース基盤の拡張と活用事例</p>
                 <p class="authors"><u>室岡 雅樹</u>, 元田 智大, 中條 亨一, Hanbit Oh, 牧原 昂志, 白井 圭佑, 尾形 哲也, 堂前 幸康</p>
-                <p class="journal-info">第44回日本ロボット学会学術講演会予稿集, 1G4-01, 2026.
+                <p class="journal-info"><strong>第44回日本ロボット学会学術講演会予稿集</strong>, 1G4-01, 2026.
                   <span class="inline-links">
                     <!-- No Project/DOI/PDF found in provided PDF content -->
                   </span>
@@ -425,7 +433,7 @@
               <li>
                 <p class="paper-title">RoboManipBaselines: ロボット模倣学習のための実機・シミュレーションに適用可能な汎用オープンフレームワーク</p>
                 <p class="authors"><u>室岡 雅樹</u>, 元田 智大, 中條 亨一, Hanbit Oh, 牧原 昂志, 白井 圭佑, 堂前 幸康</p>
-                <p class="journal-info">第43回日本ロボット学会学術講演会予稿集, 3M1-03, 2025.
+                <p class="journal-info"><strong>第43回日本ロボット学会学術講演会予稿集</strong>, 3M1-03, 2025.
                   <span class="inline-links">
                     <!-- No Project/DOI/PDF found in provided PDF content -->
                   </span>
@@ -434,7 +442,7 @@
               <li>
                 <p class="paper-title">時変・時不変コンフィギュレーションを設計可能な時系列逆運動学最適化計算によるロボット運動生成</p>
                 <p class="authors"><u>室岡雅樹</u>, 垣内洋平, 岡田慧, 稲葉雅幸</p>
-                <p class="journal-info">第24回ロボティクスシンポジア予稿集, pp. 26-29, 2019.
+                <p class="journal-info"><strong>第24回ロボティクスシンポジア予稿集</strong>, pp. 26-29, 2019.
                   <span class="inline-links">
                     <!-- No Project/DOI/PDF found in provided PDF content -->
                   </span>
@@ -443,7 +451,7 @@
               <li>
                 <p class="paper-title">ロボットマニピュレーションにおける幾何要素対応に基づく三次元物体姿勢認識</p>
                 <p class="authors"><u>室岡雅樹</u>, 伊藤秀朗, 板東正祐, 矢野倉伊織, 垣内洋平, 岡田慧, 稲葉雅幸</p>
-                <p class="journal-info">第36回日本ロボット学会学術講演会予稿集, 3J3-03, 2018.
+                <p class="journal-info"><strong>第36回日本ロボット学会学術講演会予稿集</strong>, 3J3-03, 2018.
                   <span class="inline-links">
                     <!-- No Project/DOI/PDF found in provided PDF content -->
                   </span>
@@ -452,7 +460,7 @@
               <li>
                 <p class="paper-title">ロボットマニピュレーションにおける画像内物体の深層学習による運動予測</p>
                 <p class="authors"><u>室岡雅樹</u>, 二井谷勇佑, 和田健太郎, 野沢峻一, 垣内洋平, 岡田慧, 稲葉雅幸</p>
-                <p class="journal-info">第31回人工知能学会全国大会論文集, 2B1-1, 2017.
+                <p class="journal-info"><strong>第31回人工知能学会全国大会論文集</strong>, 2B1-1, 2017.
                   <span class="inline-links">
                     <!-- No Project/DOI/PDF found in provided PDF content -->
                   </span>
@@ -461,7 +469,7 @@
               <li>
                 <p class="paper-title">等身大ヒューマノイドによる物体物理特性逐次推定に基づく大型重量物操作行動オンライン計画法</p>
                 <p class="authors"><u>室岡雅樹</u>, 野沢峻一, 垣内洋平, 岡田慧, 稲葉雅幸</p>
-                <p class="journal-info">第34回日本ロボット学会学術講演会予稿集, 3Y2-06, 2016.
+                <p class="journal-info"><strong>第34回日本ロボット学会学術講演会予稿集</strong>, 3Y2-06, 2016.
                   <span class="inline-links">
                     <!-- No Project/DOI/PDF found in provided PDF content -->
                   </span>
@@ -470,7 +478,7 @@
               <li>
                 <p class="paper-title">力覚情報による環境モデリングと試行動作計画に基づいた未知環境手探り行動の実現法</p>
                 <p class="authors"><u>室岡雅樹</u>, 植田亮平, 野沢峻一, 垣内洋平, 岡田慧, 稲葉雅幸</p>
-                <p class="journal-info">第16回計測自動制御学会システムインテグレーション部門講演会, 1F4-3, 2015.<span class="award-badge">研究奨励賞</span>
+                <p class="journal-info"><strong>第16回計測自動制御学会システムインテグレーション部門講演会</strong>, 1F4-3, 2015.<span class="award-badge">研究奨励賞</span>
                   <span class="inline-links">
                     <!-- No Project/DOI/PDF found in provided PDF content -->
                   </span>
@@ -479,7 +487,7 @@
               <li>
                 <p class="paper-title">全身接触押し動作生成と運搬戦略事前評価に基づく等身大ヒューマノイドによる重量物運搬行動の実現法</p>
                 <p class="authors"><u>室岡雅樹</u>, 野沢峻一, 垣内洋平, 岡田慧, 稲葉雅幸</p>
-                <p class="journal-info">第33回日本ロボット学会学術講演会予稿集, 2I2-08, 2015.<span class="award-badge">研究奨励賞</span>
+                <p class="journal-info"><strong>第33回日本ロボット学会学術講演会予稿集</strong>, 2I2-08, 2015.<span class="award-badge">研究奨励賞</span>
                   <span class="inline-links">
                     <!-- No Project/DOI/PDF found in provided PDF content -->
                   </span>
@@ -488,7 +496,7 @@
               <li>
                 <p class="paper-title">物体姿勢・把持接触グラフに基づく双腕ロボットによる全身接触抱え上げ操作の動作計画法</p>
                 <p class="authors"><u>室岡雅樹</u>, 稲垣祐人, 植田亮平, 野沢峻一, 垣内洋平, 岡田慧, 稲葉雅幸</p>
-                <p class="journal-info">第33回日本ロボット学会学術講演会予稿集, 1G3-03, 2015.<span class="award-badge">研究奨励賞</span>
+                <p class="journal-info"><strong>第33回日本ロボット学会学術講演会予稿集</strong>, 1G3-03, 2015.<span class="award-badge">研究奨励賞</span>
                   <span class="inline-links">
                     <!-- No Project/DOI/PDF found in provided PDF content -->
                   </span>
@@ -497,7 +505,7 @@
               <li>
                 <p class="paper-title">手動修正可能な自律認識行動システムによる未知遠隔環境下での全身マニピュレーション実現法</p>
                 <p class="authors"><u>室岡雅樹</u>, 小原由羽, 植田亮平, 野沢峻一, 垣内洋平, 岡田慧, 稲葉雅幸</p>
-                <p class="journal-info">第33回日本ロボット学会学術講演会予稿集, 3I3-04, 2015.<span class="award-badge">研究奨励賞</span>
+                <p class="journal-info"><strong>第33回日本ロボット学会学術講演会予稿集</strong>, 3I3-04, 2015.<span class="award-badge">研究奨励賞</span>
                   <span class="inline-links">
                     <!-- No Project/DOI/PDF found in provided PDF content -->
                   </span>
@@ -506,7 +514,7 @@
               <li>
                 <p class="paper-title">目標手先力更新に基づくヒューマノイド全身バランス制御法と大型重量物ピボット運搬への応用</p>
                 <p class="authors"><u>室岡雅樹</u>, 野沢峻一, 野田晋太朗, 岡田慧, 稲葉雅幸</p>
-                <p class="journal-info">第31回日本ロボット学会学術講演会予稿集, 1C3-02, 2013.
+                <p class="journal-info"><strong>第31回日本ロボット学会学術講演会予稿集</strong>, 1C3-02, 2013.
                   <span class="inline-links">
                     <!-- No Project/DOI/PDF found in provided PDF content -->
                   </span>
@@ -515,7 +523,7 @@
               <li>
                 <p class="paper-title">等身大ヒューマノイドによる物体転倒・滑り判定に基づく大型家具の押し・ピボット運搬操作の実現</p>
                 <p class="authors"><u>室岡雅樹</u>, 野沢峻一, 野田晋太朗, 岡田慧, 稲葉雅幸</p>
-                <p class="journal-info">日本機械学会ロボティクス・メカトロニクス講演会講演論文集 2013, 2P1-B02, 2013.
+                <p class="journal-info"><strong>日本機械学会ロボティクス・メカトロニクス講演会講演論文集 2013</strong>, 2P1-B02, 2013.
                   <span class="inline-links">
                     <!-- No Project/DOI/PDF found in provided PDF content -->
                   </span>
@@ -532,7 +540,7 @@
               <li>
                 <p class="paper-title">TWINS: A tactile wearable isomorphic arm networked system for contact-rich manipulation learning</p>
                 <p class="authors">Takahide Kitamura<sup>&dagger;</sup>, <u>Masaki Murooka</u><sup>&dagger;</sup>, Natsuki Yamanobe, Yukiyasu Domae</p>
-                <p class="journal-info">arXiv:2608.01733, 2026.
+                <p class="journal-info"><strong>arXiv:2608.01733</strong>, 2026.
                   <span class="inline-links">
                     <a href="https://mmurooka.github.io/twins-project-page/" target="_blank" rel="noopener noreferrer">[Project]</a> |
                     <a href="https://doi.org/10.48550/arXiv.2608.01733" target="_blank" rel="noopener noreferrer">[DOI]</a> |
@@ -543,7 +551,7 @@
               <li>
                 <p class="paper-title">GuidedAttention: Interpretable and correctable visual attention for OOD-robust robot manipulation via imitation learning</p>
                 <p class="authors"><u>Masaki Murooka</u>, Ryoichi Nakajo, Keisuke Shirai, Tomohiro Motoda, Hanbit Oh, Ryo Hanai, Yukiyasu Domae</p>
-                <p class="journal-info">arXiv:2607.21049, 2026.
+                <p class="journal-info"><strong>arXiv:2607.21049</strong>, 2026.
                   <span class="inline-links">
                     <a href="https://mmurooka.github.io/guided-attention-project-page/" target="_blank" rel="noopener noreferrer">[Project]</a> |
                     <a href="https://doi.org/10.48550/arXiv.2607.21049" target="_blank" rel="noopener noreferrer">[DOI]</a> |
@@ -562,7 +570,7 @@
               <li>
                 <p class="paper-title">The embodiment gap in robot foundation models</p>
                 <p class="authors">Y. Domae, K. Shirai, H. Oh, R. Nakajo, T. Motoda, K. Makihara, <u>M. Murooka</u>, T. Yagi, Y. Bando, R. Hanai</p>
-                <p class="journal-info">Transactions on Machine Learning Research, 2026 (Accepted).
+                <p class="journal-info"><strong>Transactions on Machine Learning Research</strong>, 2026 (Accepted).
                   <span class="inline-links">
                     <a href="https://openreview.net/forum?id=D0XcH9Cso4" target="_blank" rel="noopener noreferrer">[URL]</a>
                   </span>
@@ -571,7 +579,7 @@
               <li>
                 <p class="paper-title">Reinforcement learning of contact preferability in multi-contact locomotion planning for humanoids</p>
                 <p class="authors">I. Kumagai, <u>M. Murooka</u>, M. Morisawa, F. Kanehiro</p>
-                <p class="journal-info">IEEE Robotics and Automation Letters, vol. 10, no. 2, pp. 1768-1775, 2025.
+                <p class="journal-info"><strong>IEEE Robotics and Automation Letters (RA-L)</strong>, vol. 10, no. 2, pp. 1768-1775, 2025.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/LRA.2024.3524890" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -580,7 +588,7 @@
               <li>
                 <p class="paper-title">Humanoid robot RHP friends: seamless combination of autonomous and teleoperated tasks in a nursing context</p>
                 <p class="authors">M. Benallegue, G. Lorthioir, A. Dallard, R. Cisneros-Limón, I. Kumagai, M. Morisawa, H. Kaminaga, <u>M. Murooka</u>, A. Andre, P. Gergondet, K. Kaneko, G. Caron, F. Kanehiro, A. Kheddar, S. Yukizaki, J. Karasuyama, J. Murakami, M. Kamon</p>
-                <p class="journal-info">IEEE Robotics & Automation Magazine, vol. 32, no. 1, pp. 79-90, 2025.
+                <p class="journal-info"><strong>IEEE Robotics & Automation Magazine</strong>, vol. 32, no. 1, pp. 79-90, 2025.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/MRA.2024.3521995" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -589,7 +597,7 @@
               <li>
                 <p class="paper-title">Humanoid loco-manipulations using combined fast dense 3D tracking and slam with wide-angle depth-images</p>
                 <p class="authors">K. Chappellet, <u>M. Murooka</u>, G. Caron, F. Kanehiro, A. Kheddar</p>
-                <p class="journal-info">IEEE Transactions on Automation Science and Engineering, vol. 21, no. 3, pp. 3691-3704, 2024.
+                <p class="journal-info"><strong>IEEE Transactions on Automation Science and Engineering</strong>, vol. 21, no. 3, pp. 3691-3704, 2024.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/TASE.2023.3283497" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -598,7 +606,7 @@
               <li>
                 <p class="paper-title">Online multi-contact motion replanning for humanoid robots with semantic 3d voxel mapping: ExOctomap</p>
                 <p class="authors">M. Tsuru, A. Escande, I. Kumagai, <u>M. Murooka</u>, K. Harada</p>
-                <p class="journal-info">Sensors, vol. 23, no. 21, pp. 8837, 2023.
+                <p class="journal-info"><strong>Sensors</strong>, vol. 23, no. 21, pp. 8837, 2023.
                   <span class="inline-links">
                     <a href="https://doi.org/10.3390/s23218837" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -607,7 +615,7 @@
               <li>
                 <p class="paper-title">Model predictive control of legged and humanoid robots: models and algorithms</p>
                 <p class="authors">S. Katayama, <u>M. Murooka</u>, Y. Tazaki</p>
-                <p class="journal-info">Advanced Robotics, vol. 37, no. 5, pp. 298-315, 2023.
+                <p class="journal-info"><strong>Advanced Robotics</strong>, vol. 37, no. 5, pp. 298-315, 2023.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1080/01691864.2023.2168134" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -616,7 +624,7 @@
               <li>
                 <p class="paper-title">Multi-contact locomotion planning with bilateral contact forces considering kinematics and statics during contact transition</p>
                 <p class="authors">I. Kumagai, <u>M. Murooka</u>, M. Morisawa, F. Kanehiro</p>
-                <p class="journal-info">IEEE Robotics and Automation Letters, vol. 6, no. 4, pp. 6654-6661, 2021.
+                <p class="journal-info"><strong>IEEE Robotics and Automation Letters (RA-L)</strong>, vol. 6, no. 4, pp. 6654-6661, 2021.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/LRA.2021.3095517" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -625,7 +633,7 @@
               <li>
                 <p class="paper-title">Online generation and control of quasi-static multi-contact motion by PWT Jacobian matrix with contact wrench estimation and joint load reduction</p>
                 <p class="authors">N. Hiraoka, <u>M. Murooka</u>, S. Noda, K. Okada, M. Inaba</p>
-                <p class="journal-info">Advanced Robotics, vol. 35, no. 1, pp. 48-63, 2021.<span class="award-badge">Best Paper Award</span>
+                <p class="journal-info"><strong>Advanced Robotics</strong>, vol. 35, no. 1, pp. 48-63, 2021.<span class="award-badge">Best Paper Award</span>
                   <span class="inline-links">
                     <a href="https://doi.org/10.1080/01691864.2020.1838321" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -634,7 +642,7 @@
               <li>
                 <p class="paper-title">Selective grasp in occluded space by all-around proximity perceptible finger</p>
                 <p class="authors">N. Yamaguchi, S. Hasegawa, <u>M. Murooka</u>, K. Okada, M. Inaba</p>
-                <p class="journal-info">Robotics and Autonomous Systems, vol. 127, pp. 103464, 2020.
+                <p class="journal-info"><strong>Robotics and Autonomous Systems</strong>, vol. 127, pp. 103464, 2020.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1016/j.robot.2020.103464" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -643,7 +651,7 @@
               <li>
                 <p class="paper-title">A survey of motion planning techniques for humanoid robots</p>
                 <p class="authors">Y. Tazaki, <u>M. Murooka</u></p>
-                <p class="journal-info">Advanced Robotics, vol. 34, no. 21-22, pp. 1370-1379, 2020.
+                <p class="journal-info"><strong>Advanced Robotics</strong>, vol. 34, no. 21-22, pp. 1370-1379, 2020.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1080/01691864.2020.1803128" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -652,7 +660,7 @@
               <li>
                 <p class="paper-title">Variance based trajectory segmentation in object-centric coordinates</p>
                 <p class="authors">I. Yanokura, <u>M. Murooka</u>, S. Nozawa, K. Okada, M. Inaba</p>
-                <p class="journal-info">Advances in Intelligent Systems and Computing, pp. 56-66, 2018.
+                <p class="journal-info"><strong>Advances in Intelligent Systems and Computing</strong>, pp. 56-66, 2018.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1007/978-3-030-01370-7_5" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -669,7 +677,7 @@
               <li>
                 <p class="paper-title">Expert-guided imitation for learning humanoid loco-manipulation from motion capture</p>
                 <p class="authors">R. P. Singh, P.-A. Leziart, <u>M. Murooka</u>, M. Morisawa, E. Yoshida, F. Kanehiro</p>
-                <p class="journal-info">IEEE/SICE International Symposium on System Integrations (SII), pp. 7-14, 2026.<span class="award-badge">Best Paper Award Finalists</span>
+                <p class="journal-info"><strong>IEEE/SICE International Symposium on System Integrations (SII)</strong>, pp. 7-14, 2026.<span class="award-badge">Best Paper Award Finalists</span>
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/SII64115.2026.11404507" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -678,7 +686,7 @@
               <li>
                 <p class="paper-title">Learning bimanual manipulation via action chunking and inter-arm coordination with transformers</p>
                 <p class="authors">T. Motoda, R. Hanai, R. Nakajo, <u>M. Murooka</u>, F. Erich, Y. Domae</p>
-                <p class="journal-info">IEEE International Conference on Automation Science and Engineering (CASE), pp. 1796-1801, 2025.
+                <p class="journal-info"><strong>IEEE International Conference on Automation Science and Engineering (CASE)</strong>, pp. 1796-1801, 2025.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/CASE58245.2025.11164107" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -687,7 +695,7 @@
               <li>
                 <p class="paper-title">Tactile sensor-based detection of partial foothold for balance control in humanoid robots</p>
                 <p class="authors">T. Tako, R. Cisneros-Limón, H. Kaminaga, K. Kaneko, <u>M. Murooka</u>, I. Kumagai, H. Masuzawa, Y. Kakiuchi</p>
-                <p class="journal-info">IEEE-RAS International Conference on Humanoid Robots (Humanoids), pp. 513-520, 2024.<span class="award-badge">Best Interactive Paper Award Finalists</span>
+                <p class="journal-info"><strong>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</strong>, pp. 513-520, 2024.<span class="award-badge">Best Interactive Paper Award Finalists</span>
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/Humanoids58906.2024.10769855" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -696,7 +704,7 @@
               <li>
                 <p class="paper-title">Reachability based trajectory generation combining global graph search in task space and local optimization in configuration space</p>
                 <p class="authors">I. Kumagai, <u>M. Murooka</u>, M. Morisawa, F. Kanehiro</p>
-                <p class="journal-info">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 4513-4520, 2022.
+                <p class="journal-info"><strong>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>, pp. 4513-4520, 2022.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/IROS47612.2022.9981906" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -705,7 +713,7 @@
               <li>
                 <p class="paper-title">Aerial regrasping: Pivoting with transformable multilink aerial robot</p>
                 <p class="authors">F. Shi, M. Zhao, <u>M. Murooka</u>, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE International Conference on Robotics and Automation (ICRA), pp. 200-207, 2020.
+                <p class="journal-info"><strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, pp. 200-207, 2020.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/ICRA40945.2020.9196576" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -714,7 +722,7 @@
               <li>
                 <p class="paper-title">Learning of tool force adjustment skills by a life-sized humanoid using deep reinforcement learning and active teaching request</p>
                 <p class="authors">Y. Kawamura, <u>M. Murooka</u>, N. Hiraoka, H. Ito, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 3795-3802, 2020.
+                <p class="journal-info"><strong>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>, pp. 3795-3802, 2020.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/IROS45743.2020.9341803" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -723,7 +731,7 @@
               <li>
                 <p class="paper-title">Learning of key pose evaluation for efficient multi-contact motion planner</p>
                 <p class="authors">S. Noda, <u>M. Murooka</u>, Y. Asano, R. Ishizaki, T. Kawakami, T. Watabe, K. Okada, T. Yoshiike, M. Inaba</p>
-                <p class="journal-info">IEEE International Conference on Robotics and Automation (ICRA), pp. 10591-10597, 2020.
+                <p class="journal-info"><strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, pp. 10591-10597, 2020.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/ICRA40945.2020.9197189" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -732,7 +740,7 @@
               <li>
                 <p class="paper-title">Design, modeling and control of fully actuated 2D transformable aerial robot with 1 DoF thrust vectorable link module</p>
                 <p class="authors">T. Anzai, M. Zhao, <u>M. Murooka</u>, F. Shi, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 2820-2826, 2019.
+                <p class="journal-info"><strong>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>, pp. 2820-2826, 2019.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/IROS40897.2019.8967725" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -741,7 +749,7 @@
               <li>
                 <p class="paper-title">Whole-body control of humanoid robot in 3D multi-contact under contact wrench constraints including joint load reduction with self-collision and internal wrench distribution</p>
                 <p class="authors">N. Hiraoka, <u>M. Murooka</u>, H. Ito, I. Yanokura, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 3860-3867, 2019.
+                <p class="journal-info"><strong>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>, pp. 3860-3867, 2019.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/IROS40897.2019.8967555" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -750,7 +758,7 @@
               <li>
                 <p class="paper-title">Generating a key pose sequence based on kinematics and statics optimization for manipulating a heavy object by a humanoid robot</p>
                 <p class="authors">R. Shigematsu, <u>M. Murooka</u>, Y. Kakiuchi, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 3852-3859, 2019.
+                <p class="journal-info"><strong>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>, pp. 3852-3859, 2019.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/IROS40897.2019.8967902" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -759,7 +767,7 @@
               <li>
                 <p class="paper-title">Walking on a steep slope using a rope by a life-size humanoid robot</p>
                 <p class="authors">M. Bando, <u>M. Murooka</u>, S. Nozawa, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 705-712, 2018.
+                <p class="journal-info"><strong>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>, pp. 705-712, 2018.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/IROS.2018.8594292" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -768,7 +776,7 @@
               <li>
                 <p class="paper-title">Online estimation of object-environment constraints for planning of humanoid motion on a movable object</p>
                 <p class="authors">S. Nozawa, S. Noda, <u>M. Murooka</u>, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE International Conference on Robotics and Automation (ICRA), pp. 1291-1298, 2017.
+                <p class="journal-info"><strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, pp. 1291-1298, 2017.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/ICRA.2017.7989152" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -777,7 +785,7 @@
               <li>
                 <p class="paper-title">Rappelling by a humanoid robot based on transition motion generation and reliable rope manipulation</p>
                 <p class="authors">M. Bando, <u>M. Murooka</u>, T. Yanokura, S. Nozawa, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE-RAS International Conference on Humanoid Robotics (Humanoids), pp. 129-135, 2017.
+                <p class="journal-info"><strong>IEEE-RAS International Conference on Humanoid Robotics (Humanoids)</strong>, pp. 129-135, 2017.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/HUMANOIDS.2017.8239547" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -786,7 +794,7 @@
               <li>
                 <p class="paper-title">Unified humanoid manipulation of an object of unknown mass properties and friction based on online constraint estimation</p>
                 <p class="authors">S. Nozawa, <u>M. Murooka</u>, S. Noda, K. Kojima, Y. Kojio, Y. Kakiuchi, K. Okada</p>
-                <p class="journal-info">IEEE-RAS International Conference on Humanoid Robotics (Humanoids), pp. 249-256, 2017.
+                <p class="journal-info"><strong>IEEE-RAS International Conference on Humanoid Robotics (Humanoids)</strong>, pp. 249-256, 2017.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/HUMANOIDS.2017.8246882" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -795,7 +803,7 @@
               <li>
                 <p class="paper-title">Transformable semantic map based navigation using autonomous deep learning object segmentation</p>
                 <p class="authors">Y. Furuta, K. Wada, <u>M. Murooka</u>, S. Nozawa, Y. Kakiuchi, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE-RAS International Conference on Humanoid Robots (Humanoids), pp. 614-620, 2016.
+                <p class="journal-info"><strong>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</strong>, pp. 614-620, 2016.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/HUMANOIDS.2016.7803338" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -804,7 +812,7 @@
               <li>
                 <p class="paper-title">3D object segmentation for shelf bin picking by humanoid with deep learning and occupancy voxel grid map</p>
                 <p class="authors">K. Wada, <u>M. Murooka</u>, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE-RAS International Conference on Humanoid Robots (Humanoids), pp. 1149-1154, 2016.
+                <p class="journal-info"><strong>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</strong>, pp. 1149-1154, 2016.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/HUMANOIDS.2016.7803415" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -813,7 +821,7 @@
               <li>
                 <p class="paper-title">Development of humanoid robot system for disaster response through team nedo-jsk's approach to darpa robotics challenge finals</p>
                 <p class="authors">Y. Kakiuchi, K. Kojima, E. Kuroiwa, S. Noda, <u>M. Murooka</u>, I. Kumagai, R. Ueda, F. Sugai, S. Nozawa, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE-RAS International Conference on Humanoid Robots (Humanoids), pp. 805-810, 2015.
+                <p class="journal-info"><strong>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</strong>, pp. 805-810, 2015.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/HUMANOIDS.2015.7363446" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -822,7 +830,7 @@
               <li>
                 <p class="paper-title">Configurable autonomy applicable to humanoid manipulation in unstructured and communication-limited environment</p>
                 <p class="authors">Y. Ohara, <u>M. Murooka</u>, R. Ueda, S. Nozawa, Y. Kakiuchi, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE-RAS International Conference on Humanoid Robots (Humanoids), pp. 373-380, 2015.<span class="award-badge">Best Interactive Paper Award Finalists</span>
+                <p class="journal-info"><strong>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</strong>, pp. 373-380, 2015.<span class="award-badge">Best Interactive Paper Award Finalists</span>
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/HUMANOIDS.2015.7363577" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -831,7 +839,7 @@
               <li>
                 <p class="paper-title">Humanoid integrated UI system for supervised autonomy with massive data visualization over narrow and unreliable network communication for drc competition</p>
                 <p class="authors">R. Ueda, <u>M. Murooka</u>, Y. Ohara, I. Kumagai, R. Terasawa, Y. Furuta, K. Kojima, T. Karasawa, F. Sugai, S. Iwaishi, S. Nozawa, Y. Kakiuchi, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE-RAS International Conference on Humanoid Robots (Humanoids), pp. 797-804, 2015.
+                <p class="journal-info"><strong>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</strong>, pp. 797-804, 2015.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/HUMANOIDS.2015.7363445" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -840,7 +848,7 @@
               <li>
                 <p class="paper-title">Multi-layered real-time controllers for humanoid's manipulation and locomotion tasks with emergency stop</p>
                 <p class="authors">S. Nozawa, E. Kuroiwa, K. Kojima, R. Ueda, <u>M. Murooka</u>, S. Noda, I. Kumagai, Y. Ohara, Y. Kakiuchi, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE-RAS International Conference on Humanoid Robots (Humanoids), pp. 381-388, 2015.
+                <p class="journal-info"><strong>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</strong>, pp. 381-388, 2015.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/HUMANOIDS.2015.7363578" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -849,7 +857,7 @@
               <li>
                 <p class="paper-title">Online maintaining behavior of high-load and unstable postures based on whole-body load balancing strategy with thermal prediction</p>
                 <p class="authors">S. Noda, <u>M. Murooka</u>, S. Nozawa, Y. Kakiuchi, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE International Conference on Automation Science and Engineering (CASE), pp. 1166-1171, 2014.
+                <p class="journal-info"><strong>IEEE International Conference on Automation Science and Engineering (CASE)</strong>, pp. 1166-1171, 2014.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/CoASE.2014.6899474" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -858,7 +866,7 @@
               <li>
                 <p class="paper-title">Generating whole-body motion keep away from joint torque, contact force, contact moment limitations enabling steep climbing with a real humanoid robot</p>
                 <p class="authors">S. Noda, <u>M. Murooka</u>, S. Nozawa, Y. Kakiuchi, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE International Conference on Robotics and Automation (ICRA), pp. 1775-1781, 2014.
+                <p class="journal-info"><strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, pp. 1775-1781, 2014.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/ICRA.2014.6907091" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -867,7 +875,7 @@
               <li>
                 <p class="paper-title">Description and execution of humanoid's object manipulation based on object-environment-robot contact states</p>
                 <p class="authors">S. Nozawa, <u>M. Murooka</u>, S. Noda, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 2608-2615, 2013.
+                <p class="journal-info"><strong>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>, pp. 2608-2615, 2013.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/IROS.2013.6696724" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -876,7 +884,7 @@
               <li>
                 <p class="paper-title">Description and execution of manipulation and locomotion by a humanoid robot using cascaded contact states graph</p>
                 <p class="authors">S. Nozawa, <u>M. Murooka</u>, S. Noda, Y. Kakiuchi, K. Okada, M. Inaba</p>
-                <p class="journal-info">IEEE-RAS International Conference on Humanoid Robots (Humanoids), pp. 492-498, 2013.
+                <p class="journal-info"><strong>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</strong>, pp. 492-498, 2013.
                   <span class="inline-links">
                     <a href="https://doi.org/10.1109/HUMANOIDS.2013.7030019" target="_blank" rel="noopener noreferrer">[DOI]</a>
                   </span>
@@ -893,7 +901,7 @@
               <li>
                 <p class="paper-title">Recipe for vision-language-action models in robotic manipulation: A survey</p>
                 <p class="authors">Tomohiro Motoda, Koshi Makihara, Ryoichi Nakajo, Hanbit Oh, Keisuke Shirai, Ryo Hanai, <u>Masaki Murooka</u>, Yuma Suzuki, Hiroki Nishihara, Mitsuru Takeda, Takumi Takada, Takayuki Hori, Yukiyasu Domae</p>
-                <p class="journal-info">TechRxiv:10.36227/techrxiv.175624610.06665789/v1, 2025.
+                <p class="journal-info"><strong>TechRxiv:10.36227/techrxiv.175624610.06665789/v1</strong>, 2025.
                   <span class="inline-links">
                     <a href="https://www.techrxiv.org/doi/full/10.36227/techrxiv.175624610.06665789/v1" target="_blank" rel="noopener noreferrer">[DOI]</a> |
                     <a href="https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.175624610.06665789/v1" target="_blank" rel="noopener noreferrer">[PDF]</a>
@@ -910,31 +918,31 @@
             <ul>
               <li>
                 <p class="award-title">Best Interactive Paper Award</p>
-                <p class="award-info">IEEE-RAS International Conference on Humanoid Robots (Humanoids), 2018.11.8</p>
+                <p class="award-info"><strong>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</strong>, 2018.11.8</p>
                 <p class="award-description">Whole-body posture evaluation and modification for crane-less servo-off operation of life-sized humanoid robot<br/>
                   <u>Masaki Murooka</u>, Yohei Kakiuchi, Kei Okada, Masayuki Inaba</p>
               </li>
               <li>
                 <p class="award-title">研究科長賞</p>
-                <p class="award-info">東京大学大学院情報理工学系研究科, 2018.3.22</p>
+                <p class="award-info"><strong>東京大学大学院情報理工学系研究科</strong>, 2018.3.22</p>
                 <p class="award-description">博士論文「操作応答の知覚による物理的整合性推論に基づくヒューマノイドの試行獲得型マニピュレーション」<br/>
                   <u>室岡 雅樹</u></p>
               </li>
               <li>
                 <p class="award-title">学会誌論文賞</p>
-                <p class="award-info">日本ロボット学会, 2017.9.13</p>
+                <p class="award-info"><strong>日本ロボット学会</strong>, 2017.9.13</p>
                 <p class="award-description">等身大ヒューマノイドにおける接触姿勢計画と歩行動作修正に基づく大型重量物全身押し操作行動の実現<br/>
                   <u>室岡 雅樹</u>, 小椎尾 侑多, 野沢 峻一, 垣内 洋平, 岡田 慧, 稲葉 雅幸</p>
               </li>
               <li>
                 <p class="award-title">計測自動制御学会 学術奨励賞研究奨励賞</p>
-                <p class="award-info">第16回SICEシステムインテグレーション部門講演会, 2017.2.20</p>
+                <p class="award-info"><strong>第16回SICEシステムインテグレーション部門講演会</strong>, 2017.2.20</p>
                 <p class="award-description">力覚情報による環境モデリングと試行動作計画に基づいた未知環境手探り行動の実現法<br/>
                   <u>室岡 雅樹</u></p>
               </li>
               <li>
                 <p class="award-title">日本ロボット学会 研究奨励賞</p>
-                <p class="award-info">第33回日本ロボット学会学術講演会, 2016.9.8</p>
+                <p class="award-info"><strong>第33回日本ロボット学会学術講演会</strong>, 2016.9.8</p>
                 <p class="award-description">全身接触押し動作生成と運搬戦略事前評価に基づく等身大ヒューマノイドによる重量物運搬行動の実現法<br/>
                   物体姿勢・把持接触グラフに基づく双腕ロボットによる全身接触抱え上げ操作の動作計画法<br/>
                   手動修正可能な自律認識行動システムによる未知遠隔環境下での全身マニピュレーション実現法<br/>
@@ -942,19 +950,19 @@
               </li>
               <li>
                 <p class="award-title">研究科長賞</p>
-                <p class="award-info">東京大学大学院情報理工学系研究科, 2015.3.24</p>
+                <p class="award-info"><strong>東京大学大学院情報理工学系研究科</strong>, 2015.3.24</p>
                 <p class="award-description">修士論文「等身大ヒューマノイドにおける全身接触重量物操作行動の計画・制御法に関する研究」<br/>
                   <u>室岡 雅樹</u></p>
               </li>
               <li>
                 <p class="award-title">Best Conference Paper Award</p>
-                <p class="award-info">IEEE International Conference on Robotics and Automation (ICRA), 2014.6.4</p>
+                <p class="award-info"><strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, 2014.6.4</p>
                 <p class="award-description">Manipulation strategy decision and execution based on strategy proving operation for carrying large and heavy objects<br/>
                   <u>Masaki Murooka</u>, Shintaro Noda, Shunichi Nozawa, Yohei Kakiuchi, Kei Okada, Masayuki Inaba</p>
               </li>
               <li>
                 <p class="award-title">IEEE Robotics and Automation Society Japan Chapter Young Award</p>
-                <p class="award-info">IEEE International Conference on Robotics and Automation (ICRA), 2014.6.2</p>
+                <p class="award-info"><strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, 2014.6.2</p>
                 <p class="award-description">Manipulation strategy decision and execution based on strategy proving operation for carrying large and heavy objects<br/>
                   <u>Masaki Murooka</u></p>
               </li>
@@ -966,31 +974,31 @@
             <ul>
               <li>
                 <p class="award-title">Best Paper Award Finalists</p>
-                <p class="award-info">IEEE/SICE International Symposium on System Integrations (SII), 2026.1.12</p>
+                <p class="award-info"><strong>IEEE/SICE International Symposium on System Integrations (SII)</strong>, 2026.1.12</p>
                 <p class="award-description">Expert-guided imitation for learning humanoid loco-manipulation from motion capture<br/>
                   R. P. Singh, P.-A. Leziart, <u>M. Murooka</u>, M. Morisawa, E. Yoshida, F. Kanehiro</p>
               </li>
               <li>
                 <p class="award-title">優秀講演賞</p>
-                <p class="award-info">第26回SICEシステムインテグレーション部門講演会, 2025.12.10</p>
+                <p class="award-info"><strong>第26回SICEシステムインテグレーション部門講演会</strong>, 2025.12.10</p>
                 <p class="award-description">AIST Bimanual Manipulation Dataset: 遠隔操作による双腕ロボット学習データの収集と公開への取り組み<br/>
                   元田 智大, <u>室岡 雅樹</u>, 中條 亨一, Muttaqien Muhammad, 牧原 昂志, Oh Hanbit, 白井 圭佑, 花井 亮, Erich Floris, 堂前 幸康
               </li>
               <li>
                 <p class="award-title">Best Interactive Paper Award Finalists</p>
-                <p class="award-info">IEEE-RAS International Conference on Humanoid Robots (Humanoids), 2024.11.24</p>
+                <p class="award-info"><strong>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</strong>, 2024.11.24</p>
                 <p class="award-description">Tactile sensor-based detection of partial foothold for balance control in humanoid robots<br/>
                   T. Tako, R. Cisneros-Limón, H. Kaminaga, K. Kaneko, <u>M. Murooka</u>, I. Kumagai, H. Masuzawa, Y. Kakiuchi</p>
               </li>
               <li>
                 <p class="award-title">Best Paper Award</p>
-                <p class="award-info">Advanced Robotics, 2022.9.7</p>
+                <p class="award-info"><strong>Advanced Robotics</strong>, 2022.9.7</p>
                 <p class="award-description">Online generation and control of quasi-static multi-contact motion by PWT Jacobian matrix with contact wrench estimation and joint load reduction<br/>
                   N. Hiraoka, <u>M. Murooka</u>, S. Noda, K. Okada, M. Inaba</p>
               </li>
               <li>
                 <p class="award-title">Best Interactive Paper Award Finalists</p>
-                <p class="award-info">IEEE-RAS International Conference on Humanoid Robots (Humanoids), 2015.11.5</p>
+                <p class="award-info"><strong>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</strong>, 2015.11.5</p>
                 <p class="award-description">Configurable autonomy applicable to humanoid manipulation in unstructured and communication-limited environment<br/>
                   Y. Ohara, <u>M. Murooka</u>, R. Ueda, S. Nozawa, Y. Kakiuchi, K. Okada, M. Inaba</p>
               </li>
