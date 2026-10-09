@@ -327,6 +327,12 @@ footer {
     text-decoration: none;
 }
 
+/* 研究プロジェクトの制度名 */
+#projects .funding-program {
+    color: #0056b3;
+    font-weight: 700;
+}
+
 /* publications.html で使用するスタイル */
 .publication-category h3 {
     background-color: #e2e2e2;
